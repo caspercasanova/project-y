@@ -1,21 +1,20 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-
+import Footer from '../components/Footer/Footer';
+import LandingBanner from '../components/LandingBanner/LandingBanner';
+import Header from '../components/Header/Header';
 export default function Home() {
   let currYear = new Date().getFullYear;
   return (
     <div className={styles.container}>
       <Head>
-        <title>Stay Sick Yo</title>
+        <title>Project_Y</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <div>Product</div>
-        <div>Image</div>
-        <div>Buy Now</div>
-      </main>
+      <Header />
+      <LandingBanner />
       <section>
+        <div>Featured Release</div>
         <div>Statistics</div>
         <div>Sales Graph</div>
         <div>Visitor Map</div>
@@ -42,47 +41,9 @@ export default function Home() {
             Devicon. Thanks also to everyone who's submitted
             blogs and shared their feedback!
           </p>
-
-          <JoinEmailList />
         </div>
       </section>
-
-      <footer className={styles.footer}>
-        <div>
-          <a href={'#'}>Returns/Shipping</a>
-          <a href={'#'}>Contact Us</a>
-          <a href={'#'}>Terms & Conditions</a>
-          <a href={'#'}>FAQS</a>
-        </div>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer">
-          Powered by{' '}
-          <img
-            src="/vercel.svg"
-            alt="Vercel Logo"
-            className={styles.logo}
-          />
-        </a>
-        <div>© {currYear} New Sense Active</div>
-      </footer>
+      <Footer />
     </div>
   );
 }
-
-const JoinEmailList = () => {
-  return (
-    <div>
-      <div>Become a New Sense Nuisence</div>
-      <div>
-        Signup to receive all upcoming news on collection
-        releases and early access to exclusive drops.
-      </div>
-      <div>
-        <input type="text"></input>
-        <div>Email Icon</div>
-      </div>
-    </div>
-  );
-};

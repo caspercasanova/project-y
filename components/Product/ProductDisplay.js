@@ -1,32 +1,28 @@
 import React from 'react';
-
-export default function ProductPage() {
-  return (
-    <div>
-      <ProductDisplay />
-      <ProductStats />
-    </div>
-  );
-}
-
-const ProductStats = () => {
+import Image from 'next/image';
+export default function ProductDisplay({ product }) {
   return (
     <section>
-      <div>Product Stats</div>
-    </section>
-  );
-};
-
-const ProductDisplay = ({ product }) => {
-  return (
-    <section>
-      <div>Picture Display</div>
       <div>
-        Product Name
+        <figure>
+          <Image
+            src={'./images/projectY.png'}
+            alt={'Product Image'}
+            width={400}
+            hieght={400}
+          />
+        </figure>
         <div></div>
-        <div></div>
+      </div>
+      <aside>
+        <div>Product Name</div>
+        <div>Price</div>
         <div>
           <a href="#sizechart">Size Chart</a>
+        </div>
+        <div>
+          <button>Add To Cart</button>
+          <button>Subscribe</button>
         </div>
         <div>
           <ul>
@@ -34,10 +30,10 @@ const ProductDisplay = ({ product }) => {
             {product.type == 'hat' && HatDetails}
           </ul>
         </div>
-      </div>
+      </aside>
     </section>
   );
-};
+}
 const ShirtDetails = () => {
   return (
     <>

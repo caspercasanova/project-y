@@ -5,6 +5,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 
 export default async (req, res) => {
   const { quantity } = req.body;
+  console.log(quantity);
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     line_items: [
@@ -18,5 +19,6 @@ export default async (req, res) => {
     cancel_url: `${req.headers.origin}/checkout`,
   });
 
+  //console.log(session);
   res.status(200).json({ sessionId: session });
 };

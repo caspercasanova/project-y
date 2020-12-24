@@ -1,0 +1,47 @@
+.JoinClubContainer {
+  width: 100%;
+  min-height: 60px;
+  box-shadow: rgb(229, 229, 229) 0px -1px 0px 0px inset;
+}
+
+.JoinClubCarouselWrapper {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.JoinClubCarousel {
+  position: relative;
+  & ul {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    gap: 4px;
+    transform: translate3d(0px 0px 0px);
+    transition: all 350ms ease-in-out 0s;
+  }
+}
+
+.LeftButton {
+  position: absolute;
+  left: 0;
+}
+.RightButton {
+  position: absolute;
+  right: 0;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
