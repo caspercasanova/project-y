@@ -8,8 +8,9 @@
   Comment Capability
 
 ## FUNCTIONAL TODOS
-  Integrate Stripe and Email List
-  Web Analytics
+  [] Header and Footer Component 
+  [] Integrate Stripe and Email List
+  [] Web Analytics
 
 ## Database Integrations
   Mock up some products in a mongo distro?
