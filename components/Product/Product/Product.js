@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Image from 'next/image';
-export default function ProductDisplay({ product }) {
+import TinyLineChart from '../../graphs/TinyLineChart';
+
+export default function Product({ product }) {
   return (
-    <section>
+    <Fragment>
       <div>
         <figure>
           <Image
@@ -17,6 +19,7 @@ export default function ProductDisplay({ product }) {
       <aside>
         <div>Product Name</div>
         <div>Price</div>
+        <TinyLineChart />
         <div>
           <a href="#sizechart">Size Chart</a>
         </div>
@@ -31,9 +34,10 @@ export default function ProductDisplay({ product }) {
           </ul>
         </div>
       </aside>
-    </section>
+    </Fragment>
   );
 }
+
 const ShirtDetails = () => {
   return (
     <>

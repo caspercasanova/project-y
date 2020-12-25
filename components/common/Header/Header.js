@@ -9,16 +9,16 @@ export default function Header() {
     <section className={styles.NavigationSection}>
       <LoginBar />
       <nav className={styles.NavagationBar}>
-        <div>
+        <div className={styles.NavLink}>
           <Link href={'/'}>Home</Link>
         </div>
-        <div>
+        <div className={styles.NavLink}>
           <Link href={'/profile'}>About</Link>
         </div>
-        <div>
+        <div className={styles.NavLink}>
           <Link href={'/products'}>Products</Link>
         </div>
-        <div>
+        <div className={styles.NavLink}>
           <Link href={'/about'}>About</Link>
         </div>
       </nav>

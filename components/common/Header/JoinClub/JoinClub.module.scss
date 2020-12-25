@@ -12,11 +12,11 @@
 .JoinClubCarousel {
   position: relative;
   & ul {
-    display: grid;
-    grid-template-columns: repeat(3, 100%);
-    gap: 4px;
-    transform: translate3d(0px 0px 0px);
-    transition: all 350ms ease-in-out 0s;
+    display: flex;
+    justify-content: space-between;
+  }
+  & li {
+    list-style: none;
   }
 }
 

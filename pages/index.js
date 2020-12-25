@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Footer from '../components/Footer/Footer';
-import LandingBanner from '../components/LandingBanner/LandingBanner';
-import Header from '../components/Header/Header';
+import Footer from '../components/common/Footer/Footer';
+import Header from '../components/common/Header/Header';
+import LandingBanner from '../components/ui/LandingBanner/LandingBanner';
+import SimpleLineChart from '../components/graphs/SimpleLineChart';
 export default function Home() {
   let currYear = new Date().getFullYear;
   return (
@@ -15,32 +16,23 @@ export default function Home() {
       <LandingBanner />
       <section>
         <div>Featured Release</div>
+      </section>
+      <section>
         <div>Statistics</div>
+      </section>
+      <section>
         <div>Sales Graph</div>
+        <figure>
+          <SimpleLineChart />
+        </figure>
+      </section>
+      <section>
         <div>Visitor Map</div>
       </section>
       <section>
         <div>
-          <div>This Is the Product Catalog</div>
-          <p>
-            If your blog's been submitted by someone else
-            and you want to update its categories or
-            description, send an email to
-            trends@bloggingfordevs.com via the email address
-            listed on your website ✌️
-          </p>
-          <p>
-            The more people know about Trends, the more
-            developers' blogs are discovered and followed.
-            Help us get the word out!
-          </p>
-          <p>
-            These rankings were originally inspired by the
-            Detailed.com list of best blogs. SVG Patterns
-            are from Hero Patterns and many icons are from
-            Devicon. Thanks also to everyone who's submitted
-            blogs and shared their feedback!
-          </p>
+          This is a section meant to be cool above the
+          footer
         </div>
       </section>
       <Footer />

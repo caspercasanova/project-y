@@ -1,0 +1,24 @@
+.LandingBannerSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.PictureContainer {
+  position: relative;
+  max-width: 1400px;
+}
+
+.BannerText {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  & h1 {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  & h1,
+  h2 {
+    margin: 0;
+  }
+}
