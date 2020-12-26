@@ -1,11 +1,13 @@
 import React from 'react';
+import ProductGrid from '../../components/ProductGrid/ProductGrid';
 import Footer from '../../components/common/Footer/Footer';
 import Header from '../../components/common/Header/Header';
-export default function About() {
+
+export default function Products() {
   return (
     <div>
       <Header />
-      This Is the About Page
+      <ProductGrid />
       <Footer />
     </div>
   );

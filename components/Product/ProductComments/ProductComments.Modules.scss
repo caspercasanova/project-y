@@ -1,8 +1,26 @@
+.CommentSection {
+  display: flex;
+  flex-direction: column;
+  & .CommentSectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & .CommentList {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .CommentCard {
   display: flex;
   flex-direction: column;
-  text-align: left;
   border: 1px solid cyan;
   border-radius: 4px;
-  padding: 12px 16px;
+  padding: 24px 48px 24px 24px;
+  & .CommentCardHeader {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+  }
 }

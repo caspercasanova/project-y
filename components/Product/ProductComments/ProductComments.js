@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import styles from './ProductComments.Modules.scss';
 export default function ProductComments({ comments }) {
   return (
-    <section>
-      <div>
+    <section className={styles.CommentSection}>
+      <header className={styles.CommentSectionHeader}>
         <h3>Product Comments</h3>
         <div>Product Comments Icon</div>
-      </div>
-      <div>
+      </header>
+      <div className={styles.CommentList}>
         <Comment />
         <Comment />
         <Comment />
@@ -20,10 +20,19 @@ export default function ProductComments({ comments }) {
 const Comment = () => {
   return (
     <article className={styles.CommentCard}>
-      <h3>Title</h3>
-      <h4>Commenter</h4>
+      <header className={styles.CommentCardHeader}>
+        <div>
+          <div>Icon</div>
+          <h4>Title</h4>
+          <h4>date</h4>
+        </div>
+        <div>
+          <button>X</button>
+        </div>
+      </header>
       <p>Comment</p>
-      <div>Icons</div>
+      <h4>Commenter</h4>
+      <div>action1bar</div>
     </article>
   );
 };

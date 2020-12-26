@@ -1,48 +1,50 @@
 import React, { Fragment } from 'react';
 import Image from 'next/image';
-import TinyLineChart from '../../graphs/TinyLineChart';
-
+import styles from './Product.module.scss';
 export default function Product({ product }) {
   return (
     <Fragment>
-      <div>
-        <figure>
-          <Image
-            src={'./images/projectY.png'}
-            alt={'Product Image'}
-            width={400}
-            hieght={400}
-          />
-        </figure>
-        <div></div>
-      </div>
-      <aside>
-        <div>Product Name</div>
-        <div>Price</div>
-        <TinyLineChart />
-        <div>
-          <a href="#sizechart">Size Chart</a>
-        </div>
-        <div>
-          <button>Add To Cart</button>
-          <button>Subscribe</button>
-        </div>
-        <div>
-          <ul>
-            {product.type == 'shirt' && ShirtDetails}
-            {product.type == 'hat' && HatDetails}
-          </ul>
-        </div>
-      </aside>
+      <header>
+        <h1>Product Name</h1>
+        <h2>$420.69</h2>
+      </header>
+      <figure>
+        <Image
+          src={'./images/projectY.png'}
+          alt={'Product Image'}
+          width={400}
+          hieght={400}
+        />
+      </figure>
+      <div></div>
+      <ProductAbout />
     </Fragment>
   );
 }
+
+const ProductAbout = () => {
+  return (
+    <div>
+      <header>
+        <h3>About</h3>
+        <hr />
+      </header>
+      <p>
+        GDXJ tracks a market-cap-weighted index of global
+        gold- and silver-mining firms, focusing on small
+        caps.lf The listed name for GDXJ is VanEck Vectors
+        Junior Gold Miners ETF.
+      </p>
+      <ShirtDetails />
+    </div>
+  );
+};
 
 const ShirtDetails = () => {
   return (
     <>
       <li>Classic Tee</li>
-      <li>True to size</li>
+      <li>True to Size</li>
       <li>Screen Print</li>
       <li>
         Incredibly soft, made with tight-knit 100% cotton

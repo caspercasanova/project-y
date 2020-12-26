@@ -13,7 +13,7 @@ export default function Header() {
           <Link href={'/'}>Home</Link>
         </div>
         <div className={styles.NavLink}>
-          <Link href={'/profile'}>About</Link>
+          <Link href={'/profile'}>Profile</Link>
         </div>
         <div className={styles.NavLink}>
           <Link href={'/products'}>Products</Link>
