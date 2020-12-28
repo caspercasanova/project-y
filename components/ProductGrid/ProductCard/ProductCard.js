@@ -1,27 +1,31 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './ProductCard.module.scss';
+import Link from 'next/link';
 
-export default function ProductCard() {
+export default function ProductCard(props) {
+  const { product: p } = props;
   const [isHover, setHover] = useState(false);
   return (
-    <article
-      className={styles.Product_Card}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}>
-      <div>
-        <Image
-          src={'/images/eazy_e.png'}
-          width={350}
-          height={350}
-          alt={'product_img'}
-        />
-      </div>
-      <div className={styles.Card_SubSection}>
-        {isHover ? <ImageCards /> : <QuickInfo />}
-        <div>Price</div>
-      </div>
-    </article>
+    <Link href={`/product/${p}`}>
+      <article
+        className={styles.Product_Card}
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}>
+        <div>
+          <Image
+            src={'/images/eazy_e.png'}
+            width={350}
+            height={350}
+            alt={'product_img'}
+          />
+        </div>
+        <div className={styles.Card_SubSection}>
+          {isHover ? <ImageCards /> : <QuickInfo />}
+          <div>Price</div>
+        </div>
+      </article>
+    </Link>
   );
 }
 

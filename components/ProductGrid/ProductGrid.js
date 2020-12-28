@@ -10,7 +10,7 @@ export default function ProductGrid() {
           product,
           index // This is where were add a link to a dynamic product
         ) => (
-          <ProductCard key={index} />
+          <ProductCard key={index} product={'sick'} />
         ))}
       </section>
     </main>

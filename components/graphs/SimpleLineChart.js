@@ -55,6 +55,10 @@ const data = [
   },
 ];
 
+{
+  /* <XAxis dataKey="name" />
+<YAxis orientation="right" /> */
+}
 export default class SimpleLineChart extends PureComponent {
   static jsfiddleUrl =
     'https://jsfiddle.net/alidingling/xqjtetw0/';
@@ -66,13 +70,11 @@ export default class SimpleLineChart extends PureComponent {
           data={data}
           margin={{
             top: 5,
-            right: 30,
-            left: 20,
+            right: 5,
+            left: 5,
             bottom: 5,
           }}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
           <Tooltip />
           <Legend />
           <Line

@@ -1,0 +1,12 @@
+.Mininav {
+  height: 33px;
+  width: 100%;
+  & .Contents {
+    display: flex;
+  }
+  & .link {
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

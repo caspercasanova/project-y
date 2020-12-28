@@ -1,5 +1,5 @@
 import React from 'react';
-
-export default function Container() {
-  return <div></div>;
+import styles from './Container.module.scss';
+export default function Container({ children }) {
+  return <div className={styles.Container}>{children}</div>;
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import styles from './ProductComments.Modules.scss';
+import styles from './ProductComments.module.scss';
+
 export default function ProductComments({ comments }) {
   return (
     <section className={styles.CommentSection}>

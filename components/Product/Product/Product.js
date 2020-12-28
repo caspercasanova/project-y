@@ -10,10 +10,10 @@ export default function Product({ product }) {
       </header>
       <figure>
         <Image
-          src={'./images/projectY.png'}
+          src={'/images/eazy_e.png'}
           alt={'Product Image'}
           width={400}
-          hieght={400}
+          height={400}
         />
       </figure>
       <div></div>

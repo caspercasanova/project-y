@@ -1,6 +1,6 @@
-import React from 'react';
-import SimpleLineChart from '../../graph/SimpleLineChart';
-import TwoSimplePieChart from '../../graph/TwoSimplePieChart';
+import React, { useState } from 'react';
+import SimpleLineChart from '../../graphs/SimpleLineChart';
+import TwoSimplePieChart from '../../graphs/TwoSimplePieChart';
 
 export default function ProductStats() {
   const [toggle, toggleGraph] = useState('false');
@@ -34,6 +34,11 @@ export default function ProductStats() {
             </figcaption>
           </figure>
         )}
+      </div>
+      <div>
+        <li># of Returns</li>
+        <li></li>
+        <li># of Negative Reviews</li>
       </div>
     </section>
   );

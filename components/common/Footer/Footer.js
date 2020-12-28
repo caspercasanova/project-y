@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './Footer.module.scss';
-
+import Link from 'next/link';
 export default function Footer() {
   const currYear = new Date().getFullYear();
   return (
@@ -9,6 +9,7 @@ export default function Footer() {
       <section className={styles.FooterBody}>
         <article>
           <div className={styles.links}>
+            <Link href={'/about'}>About</Link>
             <a href={'#'}>Returns/Shipping</a>
             <a href={'#'}>Contact Us</a>
             <a href={'#'}>Terms & Conditions</a>
