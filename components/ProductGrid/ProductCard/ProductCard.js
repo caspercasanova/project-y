@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './ProductCard.module.scss';
 import Link from 'next/link';
+import TinyLineChart from '../../graphs/TinyLineChart';
 
 export default function ProductCard(props) {
   const { product: p } = props;
@@ -12,13 +13,14 @@ export default function ProductCard(props) {
         className={styles.Product_Card}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}>
-        <div>
-          <Image
+        <div className={styles.Product_Card_Container}>
+          <img
             src={'/images/eazy_e.png'}
-            width={350}
-            height={350}
             alt={'product_img'}
           />
+        </div>
+        <div style={{ width: '100px', height: '50px' }}>
+          <TinyLineChart />
         </div>
         <div className={styles.Card_SubSection}>
           {isHover ? <ImageCards /> : <QuickInfo />}
@@ -31,7 +33,7 @@ export default function ProductCard(props) {
 
 const ImageCards = () => {
   return (
-    <div>
+    <div className={styles.Product_Card_Images}>
       <Image
         src={'/images/eazy_e.png'}
         width={50}
@@ -44,11 +46,12 @@ const ImageCards = () => {
 
 const QuickInfo = () => {
   return (
-    <div>
-      <div>Just In</div>
-      <div>Sick ass hat</div>
-      <div>1 size fits all</div>
-      <div>5 color</div>
+    <div className={styles.Product_Card_QuickInfo}>
+      <div className={styles.Product_Card_Message}>
+        <div className={styles.Title}>Product_XYZ</div>
+        <div>Just In</div>
+        <div>Sick ass hat</div>
+      </div>
     </div>
   );
 };

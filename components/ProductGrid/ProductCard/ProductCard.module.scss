@@ -2,7 +2,33 @@
   padding-left: 8px;
   padding-right: 8px;
   width: 33%;
+  border: 1px solid green;
   text-align: left;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.Product_Card_Container {
+  width: 100%;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+.Product_Card_QuickInfo {
+  color: rgb(117, 117, 117);
+  font-size: 16px;
+  & .Title {
+    font-weight: 500;
+    color: rgb(17, 17, 17);
+  }
+}
+
+.Product_Card_Images {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 .Card_SubSection {

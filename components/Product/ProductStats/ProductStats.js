@@ -36,9 +36,13 @@ export default function ProductStats() {
         )}
       </div>
       <div>
-        <li># of Returns</li>
-        <li></li>
-        <li># of Negative Reviews</li>
+        <li># of Returns: Unknown</li>
+        <li># of Somethings: Unknown</li>
+        <li># of Negative Reviews: Unknown</li>
+      </div>
+      <div>
+        <div>Weight: Unknown</div>
+        <div>ID: Unknown</div>
       </div>
     </section>
   );

@@ -7,6 +7,7 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
+  ResponsiveContainer,
 } from 'recharts';
 
 const data = [
@@ -60,14 +61,16 @@ export default class TinyLineChart extends PureComponent {
 
   render() {
     return (
-      <LineChart width={300} height={100} data={data}>
-        <Line
-          type="monotone"
-          dataKey="pv"
-          stroke="#8884d8"
-          strokeWidth={2}
-        />
-      </LineChart>
+      <ResponsiveContainer>
+        <LineChart data={data}>
+          <Line
+            type="monotone"
+            dataKey="pv"
+            stroke="#8884d8"
+            strokeWidth={2}
+          />
+        </LineChart>
+      </ResponsiveContainer>
     );
   }
 }

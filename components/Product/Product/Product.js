@@ -4,20 +4,20 @@ import styles from './Product.module.scss';
 export default function Product({ product }) {
   return (
     <Fragment>
-      <header>
-        <h1>Product Name</h1>
-        <h2>$420.69</h2>
-      </header>
-      <figure>
-        <Image
-          src={'/images/eazy_e.png'}
-          alt={'Product Image'}
-          width={400}
-          height={400}
-        />
-      </figure>
-      <div></div>
-      <ProductAbout />
+      <div className={styles.Product}>
+        <header>
+          <h1>Product Name</h1>
+          <h2>$420.69</h2>
+        </header>
+        <figure className={styles.Image_Card}>
+          <img
+            src={'/images/eazy_e.png'}
+            alt={'Product Image'}
+          />
+        </figure>
+        <div></div>
+        <ProductAbout />
+      </div>
     </Fragment>
   );
 }

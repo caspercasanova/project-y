@@ -5,3 +5,21 @@
     }
   }
 }
+.Product {
+  width: 100%;
+}
+
+.ProductHeader {
+}
+
+.Image_Card {
+  width: 100%;
+  margin-bottom: 12px;
+  padding-left: 8px;
+  padding-right: 4px;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
