@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import DoublePieChart from '../../graphs/DoublePieChart';
+import styles from './Team.module.scss';
 export default function Team() {
   // fetch employees
   // name:
@@ -36,6 +37,15 @@ export default function Team() {
         <div>5 Global Locations</div>
         <div>Unlimited Sick Leave</div>
         <div>4% Retirement Matching</div>
+      </section>
+      <section className={styles.SalariesSection}>
+        <div>
+          <h2>Salaries</h2>
+
+          <figure className={styles.FigContainer}>
+            <DoublePieChart />
+          </figure>
+        </div>
       </section>
       <section>
         <article>

@@ -10,7 +10,10 @@ export default function LoginBar() {
           Nicholas Lopez
         </a>
       </div>
-      <button>Create Account / Login</button>
+      <div>
+        <button>Create Account</button>
+        <button>Cart</button>
+      </div>
     </div>
   );
 }

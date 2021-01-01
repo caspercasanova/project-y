@@ -7,6 +7,7 @@ export default function ProfileView() {
 
   return (
     <Main>
+      {}
       <nav>
         <button onClick={() => setPage('orderhistory')}>
           orderhistory

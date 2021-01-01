@@ -1,25 +1,3 @@
 .NavigationSection {
   display: block;
 }
-
-.NavagationBar {
-  display: flex;
-  justify-content: center;
-}
-
-.NavLink {
-  padding: 14px 12px;
-  font-weight: 400;
-  font-size: 16px;
-  text-transform: uppercase;
-  border-bottom: 2px solid transparent;
-  text-decoration: none;
-  cursor: pointer;
-  &:hover {
-    border-bottom: 2px solid #426ba7;
-    color: #426ba7;
-  }
-  & a {
-    text-decoration: none;
-  }
-}

@@ -29,18 +29,15 @@ export default function FAQ() {
       answer: 'FOLLOW US ON INSTA AND TWITTER SILLY!',
     },
   ];
-  const [currQidx, setIdx] = useState(0);
   return (
     <div>
       <header>This is the Faq</header>
-      <section className={styles.Faq_Card_Container}>
+      <section className={styles.Faq_Card_Section}>
         {qs.map((question, index) => (
           <FAQCard
             key={index}
             question={question.question}
             answer={question.answer}
-            onClick={() => setIdx(index)}
-            show={currQidx == index}
           />
         ))}
       </section>
@@ -48,11 +45,11 @@ export default function FAQ() {
   );
 }
 
-const FAQCard = ({ onClick, show, question, answer }) => {
+const FAQCard = ({ question, answer }) => {
   return (
-    <article onClick={onClick} className={styles.FAQCard}>
+    <article className={styles.FAQCard}>
       <header>{question}</header>
-      {show && <div>{answer}</div>}
+      <div>{answer}</div>
     </article>
   );
 };
