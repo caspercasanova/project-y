@@ -3,10 +3,10 @@ import ProductStats from '../ProductStats/ProductStats';
 import Product from '../Product/Product';
 import ProductComments from '../ProductComments/ProductComments';
 import styles from './ProductView.module.scss';
-
+import Main from '../../ui/Main/Main';
 export default function ProductView({ product }) {
   return (
-    <main>
+    <Main>
       <section>
         <Product product={product} />
       </section>
@@ -16,6 +16,6 @@ export default function ProductView({ product }) {
       <section>
         <ProductComments product={product} />
       </section>
-    </main>
+    </Main>
   );
 }

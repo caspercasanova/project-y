@@ -25,7 +25,24 @@ p {
   max-width: 60ch;
 }
 
+/*  
+  #000046
+  → 
+  #1cb5e0  
+*/
 
+a {
+  font-size: 16px;
+  margin-bottom: 4px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: transform 0.1s ease-in;
+  &:hover {
+    cursor: pointer;
+    color: #426ba7;
+    text-decoration: underline;
+  }
+}
 
 //Sizing:
 $max_width: 1100px;

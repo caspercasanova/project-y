@@ -32,8 +32,8 @@ export default function Footer() {
         <article>
           <div>Become a Project-Y Member</div>
           <div>
-            Subscribe to receive updates, access to
-            exclusive deals, and more.
+            Subscribe to receive updates, access to exclusive deals,
+            and more.
           </div>
           <div>
             <input type="text"></input>

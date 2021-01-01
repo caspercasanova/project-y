@@ -6,11 +6,11 @@ import Purpose from '../Purpose/Purpose';
 import Returns from '../Returns/Returns';
 import Team from '../Team/Team';
 import styles from './AboutView.module.scss';
-
+import Main from '../../ui/Main/Main';
 export default function AboutView() {
   const [page, setPage] = useState('about');
   return (
-    <main className={styles.AboutView}>
+    <Main>
       <nav>
         <button onClick={() => setPage('about')}>about</button>
         <button onClick={() => setPage('team')}>team</button>
@@ -30,7 +30,7 @@ export default function AboutView() {
       {page == 'returns' && <Returns />}
       {page == 'purpose' && <Purpose />}
       {page == 'contactus' && <ContactUs />}
-    </main>
+    </Main>
   );
 }
 

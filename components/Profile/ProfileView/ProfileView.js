@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Settings from '../Settings/Settings';
 import OrderHistory from '../OrderHistory/OrderHistory';
-
+import Main from '../../ui/Main/Main';
 export default function ProfileView() {
   const [page, setPage] = useState('orderhistory');
 
   return (
-    <div>
+    <Main>
       <nav>
         <button onClick={() => setPage('orderhistory')}>
           orderhistory
@@ -16,6 +16,6 @@ export default function ProfileView() {
 
       {page == 'orderhistory' && <OrderHistory />}
       {page == 'settings' && <Settings />}
-    </div>
+    </Main>
   );
 }

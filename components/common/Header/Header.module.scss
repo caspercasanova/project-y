@@ -13,7 +13,13 @@
   font-size: 16px;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
   &:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #426ba7;
+    color: #426ba7;
+  }
+  & a {
+    text-decoration: none;
   }
 }
