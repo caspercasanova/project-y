@@ -69,50 +69,6 @@ export default function Home() {
             </figure>
           </section>
 
-          <section className={styles.Saleschart_Section}>
-            <header className={styles.Saleschart_Header}>
-              <h3>Project_Y Sales-To-Date</h3>
-            </header>
-            <div className={styles.Saleschart_Body}>
-              <div className={styles.Saleschart_Info}>
-                <p>
-                  The Project_Y Group is organized around the simple
-                  Idea transparency leads to success. You the viewer
-                  has viewing access to all of accounts. Our Brand is
-                  centered around authenticity and how else could we
-                  be authentic if we didn't show the ins and outs of
-                  the business. Our API has predictable
-                  resource-oriented URLs, accepts form-encoded request
-                  bodies, returns JSON-encoded responses, and uses
-                  standard HTTP response codes, authentication, and
-                  verbs.
-                </p>
-                <p>
-                  You can use the Stripe API in test mode, which does
-                  not affect your live data or interact with the
-                  banking networks. The API key you use to
-                  authenticate the request determines whether the
-                  request is live mode or test mode.
-                </p>
-                <p>
-                  The Stripe API differs for every account as we
-                  release new versions and tailor functionality. These
-                  docs are customized to your version of the API and
-                  display your test key and test data, which only you
-                  can see.
-                </p>
-              </div>
-              <div className={styles.Saleschart_Figure}>
-                <SimpleLineChart />
-              </div>
-            </div>
-            <footer>
-              <figure className={styles.Saleschart_Footer_Figure}>
-                <SimpleLineChart />
-              </figure>
-            </footer>
-          </section>
-
           <section>
             <div>Visitor Map</div>
           </section>
@@ -122,7 +78,6 @@ export default function Home() {
             </div>
           </section>
         </Main>
-
         <Footer />
       </Container>
     </>

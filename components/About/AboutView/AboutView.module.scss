@@ -1,5 +1,5 @@
 .AboutViewNav {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #eaeaea;
   & button {
     text-transform: uppercase;
     font-weight: 400;
@@ -10,10 +10,15 @@
     border: none;
     background: none;
     text-align: left;
+    padding-bottom: 10px;
     margin-right: 10px;
     &:hover {
       border-bottom: 2px solid #426ba7;
       color: #426ba7;
     }
+  }
+  .active {
+    border-bottom: 2px solid #426ba7;
+    color: #426ba7;
   }
 }

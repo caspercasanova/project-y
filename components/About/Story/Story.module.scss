@@ -1,0 +1,33 @@
+/* ############### */
+.Saleschart_Section {
+  border-bottom: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  & .Saleschart_Header {
+  }
+  & .Saleschart_Body {
+    display: flex;
+    width: 100%;
+  }
+  & .Saleschart_Info {
+    max-width: 60ch;
+  }
+  & .Saleschart_Figure {
+    min-height: 100%;
+    width: 100%;
+  }
+  & footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    & .Saleschart_Footer_Figure {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}

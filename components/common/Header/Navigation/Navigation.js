@@ -6,18 +6,19 @@ export default function Navigation() {
   return (
     <div>
       <nav className={styles.NavigationBar}>
-        <div className={styles.NavLink}>
-          <Link href={'/'}>Home</Link>
-        </div>
-        <div className={styles.NavLink}>
-          <Link href={'/profile'}>Profile</Link>
-        </div>
-        <div className={styles.NavLink}>
-          <Link href={'/products'}>Products</Link>
-        </div>
-        <div className={styles.NavLink}>
-          <Link href={'/about'}>About</Link>
-        </div>
+        <Link href={'/'}>
+          <div className={styles.NavLink}>Home</div>
+        </Link>
+        <Link href={'/profile'}>
+          <div className={styles.NavLink}>Profile</div>
+        </Link>
+
+        <Link href={'/products'}>
+          <div className={styles.NavLink}>Products</div>
+        </Link>
+        <Link href={'/about'}>
+          <div className={styles.NavLink}>About</div>
+        </Link>
       </nav>
     </div>
   );
