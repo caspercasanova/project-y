@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SimpleLineChart from '../../graphs/SimpleLineChart';
 import TwoSimplePieChart from '../../graphs/TwoSimplePieChart';
 
+
 export default function ProductStats() {
   const [toggle, toggleGraph] = useState('false');
 

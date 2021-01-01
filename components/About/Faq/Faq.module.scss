@@ -1,0 +1,10 @@
+.Faq_Card_Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.FAQCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+}

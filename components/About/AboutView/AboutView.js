@@ -4,6 +4,7 @@ import Faq from '../Faq/Faq';
 import News from '../News/News';
 import Purpose from '../Purpose/Purpose';
 import Returns from '../Returns/Returns';
+import Team from '../Team/Team';
 import styles from './AboutView.module.scss';
 
 export default function AboutView() {
@@ -12,6 +13,7 @@ export default function AboutView() {
     <main className={styles.AboutView}>
       <nav>
         <button onClick={() => setPage('about')}>about</button>
+        <button onClick={() => setPage('team')}>team</button>
         <button onClick={() => setPage('faq')}>faq</button>
         <button onClick={() => setPage('news')}>news</button>
         <button onClick={() => setPage('returns')}>returns</button>
@@ -22,6 +24,7 @@ export default function AboutView() {
       </nav>
 
       {page == 'about' && <Abt />}
+      {page == 'team' && <Team />}
       {page == 'faq' && <Faq />}
       {page == 'news' && <News />}
       {page == 'returns' && <Returns />}

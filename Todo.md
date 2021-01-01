@@ -9,24 +9,26 @@
   [] Header and Footer Component 
 
 ## FUNCTIONAL TODOS
+  [] Cart and Checkout
   [] Integrate Stripe and Email List
   [] Web Analytics
   [] Database Integration
   [] Routing to all pages
     [x] About
-      [] About Page
-      [] Stats
-      [] Returns
-      [] FAQs
+      [x] About Page
+      [x] Stats
+      [x] Returns
+      [x] FAQs
     [x] Product
     [x] Products
     [x] Profile
-      [] Order History
+      [x] Order History
       [] Deals
-      [] Settings
+      [x] Settings
         [] Delete Account
   [] Comment Capability
- 
+  [] Users with ProductID in history can leave comment and recieve props for comment
+  
 ## Database Integrations
   Mock up some products in a mongo distro?
   [] Seed File For Time Series Data

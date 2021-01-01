@@ -10,7 +10,7 @@ export default async (req, res) => {
     payment_method_types: ['card'],
     line_items: [
       {
-        price: `price_1Gt0uyDHI54VOJ0H5zbvN21K`,
+        price: `price_1GyprmDHI54VOJ0H0B9fbwIV`,
         quantity,
       },
     ],
