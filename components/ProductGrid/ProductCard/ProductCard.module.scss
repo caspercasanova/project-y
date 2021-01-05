@@ -1,23 +1,30 @@
 .Product_Card {
-  padding-left: 8px;
-  padding-right: 8px;
-  width: 33%;
-  border: 1px solid green;
+  width: auto;
+  border: 1px solid transparent;
   text-align: left;
-  margin-bottom: 12px;
   cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 4px;
 }
 
 .Product_Card_Container {
+  background: linear-gradient(135deg, #1e1e24 10%, #050505 60%);
+  background: linear-gradient(133deg, #f1f1f1 10%, #e0e0e0 90%);
+  /*  background: hsla(0, 100%, 100%, 0.25); */
+  box-shadow: 0 0 8px hsla(0, 100%, 100%, 0.25);
   width: 100%;
-
+  padding: 8px;
+  border-radius: 4px;
   & img {
     width: 100%;
     height: auto;
   }
 }
 .Product_Card_QuickInfo {
-  color: rgb(117, 117, 117);
+  color: hsla(0, 100%, 100%, 0.25);
   font-size: 16px;
   & .Title {
     font-weight: 500;

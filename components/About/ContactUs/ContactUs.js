@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Field from '../../ui/Field/Field';
 export default function ContactUs() {
   const onSubmit = e => {
     e.preventDefault();
@@ -26,18 +26,14 @@ export default function ContactUs() {
         <h3>Apply for SponsorShip</h3>
         <div>
           <form onSubmit={onSubmit}>
-            <input placeholder="Name" />
-
-            <input placeholder="Email" />
-
-            <input placeholder="Portfolio" />
-
-            <input placeholder="Twitter" />
-
-            <input placeholder="Youtube" />
-            <input placeholder="Instagram" />
-            <input placeholder="Facebook" />
-            <input placeholder="About" />
+            <Field placeholder="Name" />
+            <Field placeholder="Email" />
+            <Field placeholder="Portfolio" />
+            <Field placeholder="Twitter" />
+            <Field placeholder="Youtube" />
+            <Field placeholder="Instagram" />
+            <Field placeholder="Facebook" />
+            <Field placeholder="About" />
           </form>
         </div>
       </section>
@@ -45,14 +41,14 @@ export default function ContactUs() {
         <h3>Be a Model!</h3>
         <div>
           <form>
-            <input placeholder="Name" />
-            <input placeholder="Email" />
-            <input placeholder="Portfolio" />
-            <input placeholder="Twitter" />
-            <input placeholder="Youtube" />
-            <input placeholder="Instagram" />
-            <input placeholder="Facebook" />
-            <input placeholder="About" />
+            <Field placeholder="Name" />
+            <Field placeholder="Email" />
+            <Field placeholder="Portfolio" />
+            <Field placeholder="Twitter" />
+            <Field placeholder="Youtube" />
+            <Field placeholder="Instagram" />
+            <Field placeholder="Facebook" />
+            <Field placeholder="About" />
           </form>
         </div>
       </section>

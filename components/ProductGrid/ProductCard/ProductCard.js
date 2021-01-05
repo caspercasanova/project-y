@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './ProductCard.module.scss';
 import Link from 'next/link';
 import TinyLineChart from '../../graphs/TinyLineChart';
+import Corners from '../../ui/Corners/Corners';
 
 export default function ProductCard(props) {
   const { product: p } = props;
@@ -13,19 +14,18 @@ export default function ProductCard(props) {
         className={styles.Product_Card}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}>
+        <Corners top={true} />
         <div className={styles.Product_Card_Container}>
-          <img
-            src={'/images/eazy_e.png'}
-            alt={'product_img'}
-          />
+          <img src={'/images/eazy_e.png'} alt={'product_img'} />
+          <div style={{ width: '100px', height: '50px' }}>
+            <TinyLineChart />
+          </div>
+          <div className={styles.Card_SubSection}>
+            {isHover ? <ImageCards /> : <QuickInfo />}
+            <div>Price</div>
+          </div>
         </div>
-        <div style={{ width: '100px', height: '50px' }}>
-          <TinyLineChart />
-        </div>
-        <div className={styles.Card_SubSection}>
-          {isHover ? <ImageCards /> : <QuickInfo />}
-          <div>Price</div>
-        </div>
+        <Corners bottom={true} />
       </article>
     </Link>
   );

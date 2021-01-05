@@ -1,0 +1,54 @@
+.CornerContainer {
+  position: relative;
+  width: 100%;
+}
+
+.Corners {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  &:before {
+    content: '';
+    position: absolute;
+    border-color: #426ba7;
+    border-style: solid;
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+    border-radius: 8%;
+  }
+  &:after {
+    content: '';
+    border-radius: 8%;
+    border-color: #426ba7;
+    border-style: solid;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+  }
+}
+
+.TopCorners {
+  top: 0px;
+  &:before {
+    border-width: 3px 0 0 3px;
+    left: 0px;
+  }
+  &:after {
+    border-width: 3px 3px 0 0;
+    right: 0px;
+  }
+}
+
+.BottomCorners {
+  bottom: 20px;
+  &:before {
+    left: 0;
+    border-width: 0 0 3px 3px;
+  }
+  &:after {
+    right: 0;
+    border-width: 0 3px 3px 0;
+  }
+}

@@ -70,12 +70,7 @@ export default function Home() {
           </section>
 
           <section>
-            <div>Visitor Map</div>
-          </section>
-          <section>
-            <div>
-              This is a section meant to be cool above the footer
-            </div>
+            <ApplyToBeAModel />
           </section>
         </Main>
         <Footer />
@@ -119,5 +114,13 @@ const LargeProductCard = () => {
         <SimpleLineChart />
       </figure>
     </article>
+  );
+};
+
+const ApplyToBeAModel = () => {
+  return (
+    <div>
+      <h3>Apply to be a Project-Y Model!</h3>
+    </div>
   );
 };

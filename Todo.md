@@ -9,8 +9,12 @@
   [] Nike Style Product Display
   [] Map and Sales Graph
   [] Header and Footer Component 
+  [] Seasonal Sales
+  [] Checkout
 
 ## FUNCTIONAL TODOS
+  [] Checkout
+  [] Seasonal Sales
   [] Database Integration
   [] Auth Context / Routing
   [] Cart and Checkout 

@@ -1,0 +1,35 @@
+.FieldContainer {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  /* font-family: 'digital-7'; */
+}
+
+.Input {
+  width: 100%;
+  background: transparent;
+  padding: 0px 0px 10px 0px;
+  border: none;
+  border-left: 1px solid purple;
+  border-bottom: 1px solid purple;
+  color: purple;
+  font-size: 16px;
+  padding-left: 0.3em;
+  letter-spacing: 0.3em;
+  transition: 0.5s;
+  &:focus {
+    outline: 0;
+  }
+}
+.Label {
+  position: absolute;
+  display: block;
+  padding: 0.5em;
+  transition: 0.5s;
+  cursor: inherit;
+  top: -80%;
+  color: purple;
+  & .error {
+    color: red;
+  }
+}

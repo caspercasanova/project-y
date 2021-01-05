@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './Footer.module.scss';
 import Link from 'next/link';
+import Field from '../../ui/Field/Field';
+
 export default function Footer() {
   const currYear = new Date().getFullYear();
   return (
@@ -36,7 +38,11 @@ export default function Footer() {
             and more.
           </div>
           <div>
-            <input type="text"></input>
+            <Field
+              type={'text'}
+              placeholder={'email'}
+              id={'EmailField'}
+            />
             <div>Email Icon</div>
           </div>
         </article>
