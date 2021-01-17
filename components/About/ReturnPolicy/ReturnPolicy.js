@@ -37,8 +37,8 @@ export default function ReturnPolicy() {
         <h3>TEMPORARY RETURN EXTENSION</h3>
         <p>
           <b>
-            All Nike purchases have an extended 60-day return policy
-            (some exceptions apply).
+            All Project Y purchases have an extended 60-day return
+            policy (some exceptions apply).
           </b>
         </p>
         <p>
@@ -54,14 +54,14 @@ export default function ReturnPolicy() {
           We design our shoes and gear to help you perform at peak
           level, so if they're not working exactly right for you,
           we've got you covered. Whether you shop on Nike.com, in any
-          of the Nike apps, or at a Nike store, we provide you 60 days
-          to take your Nike and Converse purchases for a trial run,
+          of the Project Y apps, or at a Project Y store, we provide
+          you 60 days to take your Project Y purchase for a trial run,
           confidently knowing you can return any item{' '}
           <a href={'#'}>(some exceptions apply)</a> for any reason
           within those 60 days. That also includes custom Nike By You
           sneakers. Even after 60 days, you can still return items if
           they’re unworn and unwashed. And remember, returns are
-          always free for <a href={'#'}>Nike Members.</a>
+          always free for <a href={'#'}>Project Y Members.</a>
         </p>
       </article>
 

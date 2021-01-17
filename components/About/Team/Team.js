@@ -17,7 +17,7 @@ export default function Team() {
           with our co-workers to our commitment to building solid and
           true products.
         </p>
-        <p>At Formidable we value</p>
+        <p>At Project Y we value</p>
         <p>
           <b>Inclusion</b>: Come as you are. You are safe here.
         </p>
@@ -32,8 +32,15 @@ export default function Team() {
         </p>
       </header>
       <section>
+        <article>
+          <div>Employee Card</div>
+          <div>Twitter</div>
+        </article>
+      </section>
+
+      <section>
         <div>total employees</div>
-        <div>11% full remote </div>
+        <div>11% full remote</div>
         <div>5 Global Locations</div>
         <div>Unlimited Sick Leave</div>
         <div>4% Retirement Matching</div>
@@ -47,12 +54,8 @@ export default function Team() {
           </figure>
         </div>
       </section>
-      <section>
-        <article>
-          <div>Employee Card</div>
-          <div>Twitter</div>
-        </article>
-      </section>
+
+      <section>Salaries Adjusted for Inflation</section>
     </div>
   );
 }

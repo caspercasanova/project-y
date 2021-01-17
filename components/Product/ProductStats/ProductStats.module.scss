@@ -1,0 +1,15 @@
+.OverallSales {
+  display: flex;
+  & .info {
+    flex: 1;
+  }
+  & figure {
+    flex: 2;
+
+    & figcaption {
+      font-size: 12px;
+    }
+  }
+  background: gray;
+  border-radius: 4px;
+}

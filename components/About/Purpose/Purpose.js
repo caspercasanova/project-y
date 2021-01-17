@@ -32,10 +32,10 @@ export default function Purpose() {
       <section>
         <div>
           <p>
-            “NIKE exists to progress sport. But in recent years, we
-            also face a broader challenge: to protect sport itself.”
+            Project Y exists to progress sport. But in recent years,
+            we also face a broader challenge: to protect sport
+            itself.”
           </p>
-          <span>John Donahoe, President and CEO of NIKE</span>
         </div>
       </section>
     </main>

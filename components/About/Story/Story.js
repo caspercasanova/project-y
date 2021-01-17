@@ -9,15 +9,18 @@ export default function Story() {
           <h2>Story</h2>
         </div>
 
-        <div>
-          <article>
-            Project Y Is a business built for and by the people. It
-            aims to showcase an emotion and mentality ignored and
-            uncapturable by modern media. Project Y is sharp edge in a
-            world of dull blades. Money is not the motive. Active
-            Movement is.
-          </article>
-        </div>
+        <article>
+          <p>
+            Project Y is a platform built for and by the people of Los
+            Angeles. It aims to showcase an mentality, emotion, and
+            essence normally uncapturable and mostly ignored by modern
+            media.
+          </p>
+          <p>Project Y is sharp edge in a world of dull blades.</p>
+          <p>Money is not the motive.</p>
+          <p>Movement is.</p>
+        </article>
+
         <figure>
           <img />
           <figcaption>
