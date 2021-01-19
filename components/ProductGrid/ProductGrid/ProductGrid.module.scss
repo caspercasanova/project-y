@@ -1,6 +1,25 @@
+$mobileS: 320px;
+$mobileM: 375px;
+$mobileL: 425px;
+$tablet: 768px;
+$laptop: 1024px;
 .Product_Grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
   width: 100%;
+  @media (min-width: $mobileS) {
+  }
+  @media (min-width: $mobileM) {
+  }
+  @media (min-width: $mobileL) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $laptop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

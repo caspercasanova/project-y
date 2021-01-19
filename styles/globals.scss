@@ -40,6 +40,27 @@ a {
   }
 }
 
-//Sizing:
-$max_width: 1100px;
-$mobile-width: 600px;
+$mobileS: 320px;
+$mobileM: 375px;
+$mobileL: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$laptopL: 1440px;
+$desktop: 2560px;
+
+@media (min-width: $mobileS) {
+}
+@media (min-width: $mobileM) {
+}
+@media (min-width: $mobileL) {
+}
+@media (min-width: $tablet) {
+}
+@media (min-width: $laptop) {
+}
+@media (min-width: $laptopL) {
+}
+@media (min-width: $desktop) {
+}
+@media (min-width: $desktop) {
+}

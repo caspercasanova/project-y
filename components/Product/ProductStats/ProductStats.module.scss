@@ -1,15 +1,48 @@
-.OverallSales {
+.StatsSection {
+  padding: 0 2%;
+  padding-top: 24px;
+}
+
+.OverallSalesContainer {
+  padding: 0px 10px;
+  background: gray;
+  border-radius: 4px;
+}
+
+.GraphContainer {
   display: flex;
+  border-bottom: 1px solid black;
   & .info {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
   }
   & figure {
     flex: 2;
-
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     & figcaption {
+      text-align: right;
       font-size: 12px;
+      padding-bottom: 5px;
+      padding-right: 4px;
     }
   }
-  background: gray;
-  border-radius: 4px;
+}
+
+.MinorSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.minorDetailContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }

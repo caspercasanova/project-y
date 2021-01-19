@@ -79,37 +79,33 @@ const renderActiveShape = props => {
   );
 };
 
-export default class DoublePieChart extends PureComponent {
-  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/hqnrgxpj/';
+export default function DoublePieChart() {
+  // state = {
+  //   activeIndex: 0,
+  // };
 
-  state = {
-    activeIndex: 0,
-  };
+  // onPieEnter = (data, index) => {
+  //   this.setState({
+  //     activeIndex: index,
+  //   });
+  // };
 
-  onPieEnter = (data, index) => {
-    this.setState({
-      activeIndex: index,
-    });
-  };
-
-  render() {
-    return (
-      <ResponsiveContainer>
-        <PieChart>
-          <Pie
-            activeIndex={this.state.activeIndex}
-            activeShape={renderActiveShape}
-            data={data}
-            cx={200}
-            cy={200}
-            innerRadius={60}
-            outerRadius={80}
-            fill="#8884d8"
-            dataKey="value"
-            onMouseEnter={this.onPieEnter}
-          />
-        </PieChart>
-      </ResponsiveContainer>
-    );
-  }
+  return (
+    <ResponsiveContainer>
+      <PieChart>
+        <Pie
+          // activeIndex={this.state.activeIndex}
+          // activeShape={renderActiveShape}
+          data={data}
+          cx={200}
+          cy={200}
+          innerRadius={60}
+          outerRadius={80}
+          fill="#8884d8"
+          dataKey="value"
+          // onMouseEnter={this.onPieEnter}
+        />
+      </PieChart>
+    </ResponsiveContainer>
+  );
 }

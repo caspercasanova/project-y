@@ -1,26 +1,60 @@
 import React, { Fragment } from 'react';
 import Image from 'next/image';
 import styles from './Product.module.scss';
-
+import Button from '../../ui/Button';
 export default function Product({ product }) {
   return (
     <Fragment>
-      <div className={styles.Product}>
-        <header>
-          <h1>Product Name</h1>
-          <h2>$420.69</h2>
+      <section className={styles.Product}>
+        <header className={styles.ProductHeader}>
+          <div className={styles.ProductHeaderMain}>
+            <div>
+              <h1>Product Name</h1>
+              <h2>$420.69</h2>
+              <h5>+$9.10 (+1.47%) Today</h5>
+            </div>
+            <div>
+              <div>
+                Recent Reviews: Very Positive - 8430 user reviews
+              </div>
+              <div>
+                All Reviews: Very Positive - 8430 user reviews
+              </div>
+              <div>Release Date: Dec 9 2019</div>
+              <div>Developer: Rockstar Games</div>
+              <div>Publisher: Rockstar Games</div>
+            </div>
+          </div>
+          <div>
+            Popular User Defined Tags for this product.
+            <div className={styles.tagContainer}>
+              <div className={styles.tag}>Adventure</div>
+              <div className={styles.tag}>Open World</div>
+              <div className={styles.tag}>Action</div>
+              <div className={styles.tag}>Western</div>
+              <div className={styles.tag}>Story Rich</div>
+            </div>
+          </div>
         </header>
-        <figure className={styles.Image_Card}>
-          <img src={'/images/eazy_e.png'} alt={'Product Image'} />
-        </figure>
+        <ImageCarousel />
         <div className={styles.ButtonContainer}>
           <button className={styles.AddToCart}>Add To Cart</button>
         </div>
-        <ProductAbout />
-      </div>
+      </section>
+      <ProductAbout />
     </Fragment>
   );
 }
+
+const ImageCarousel = () => {
+  return (
+    <div>
+      <figure className={styles.Image_Card}>
+        <img src={'/images/eazy_e.png'} alt={'Product Image'} />
+      </figure>
+    </div>
+  );
+};
 
 const ProductAbout = () => {
   return (
@@ -29,10 +63,25 @@ const ProductAbout = () => {
         <h3>About</h3>
         <hr />
       </header>
+      <p>REMEMBER THE ROSWELL RAYGUNS IN VERSATILE COMFORT. </p>
       <p>
-        GDXJ tracks a market-cap-weighted index of global gold- and
-        silver-mining firms, focusing on small caps.lf The listed name
-        for GDXJ is VanEck Vectors Junior Gold Miners ETF.
+        In the early '00s, Nike Basketball created a fake '70s-era
+        basketball team for some fun, funky TV spots.
+      </p>
+      <p>
+        The Nike Rayguns Basketball T-Shirt is a play on those old ads
+        with the "Roswell Rayguns" alien logo. It's made from soft,
+        comfortable cotton with a relaxed fit.
+      </p>
+      <p>
+        Rayguns Alien Logo The large "Roswell Rayguns" alien logo
+        comes from the memorable Nike Basketball commercials made back
+        in the early '00s.
+      </p>
+      <p>
+        Easy, Everyday Comfort Everyday cotton fabric feels soft and
+        lightweight. The fit is relaxed and easy to wear with a
+        versatile shape.
       </p>
       <ProductDetails />
     </section>
@@ -44,47 +93,111 @@ const ProductDetails = () => {
     <div>
       <h3>Product Details</h3>
       <hr />
-      <ul className={styles.ProductDetailsList}>
-        <li>
-          <p>Type: Classic Tee</p>
-        </li>
-        <li>
-          <p>True to Size</p>
-        </li>
-        <li>
-          <p>Screen Print</p>
-        </li>
-        <li>
-          <p>
-            Incredibly soft, made with tight-knit 100% cotton for
-            everyday wear.
-          </p>
-        </li>
-        <li>
-          <p>
-            Care Instruction: Machine wash cold. Tumble dry low. Do
-            not iron. Do not dry clean.
-          </p>
-        </li>
+      <div className={styles.DetailBlockContainer}>
+        <div className={styles.DetailsLeftColumn}>
+          <div className={styles.CategoryBlock}>
+            <div className={styles.Spec}>
+              <a href={'#'}>Single Player</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>Online PvP</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>Steam Achievements</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>In-App Purchases</a>
+            </div>
+          </div>
+          <div className={styles.CategoryBlock}>
+            <div>
+              <div>Title: Product Name</div>
+              <div>Genre: Action Game</div>
+              <div>Artist: Casper Casanova</div>
+              <div>Franchise: Some Sick Ass Brand</div>
+              <div>Release Date: Dec 5 2019</div>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>View The Website</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>View The Manual</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>View The Stats</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>View Related Products</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>View Reviews</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>Find Community Groups</a>
+            </div>
+          </div>
+          <div className={styles.CategoryBlock}>
+            <Button>Add To WishList</Button>
+          </div>
+        </div>
 
-        <li>
-          <p>Minimal Shrinkage</p>
-        </li>
-      </ul>
+        <div className={styles.DetailsRightColumn}>
+          <div className={styles.CategoryBlock}>
+            <div className={styles.Spec}>
+              <a href={'#'}>Type: Classic Tee</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>True To Size</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>Weight: Unkown</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>ID: Unkown</a>
+            </div>
+
+            <div className={styles.Spec}>
+              <a href={'#'}>Art: Screen Printed</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>Minimal Shrinkage</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>
+                {' '}
+                Incredibly soft, made with tight-knit 100% cotton for
+                everyday wear.
+              </a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}>
+                {' '}
+                Care Instruction: Machine wash cold. Tumble dry low.
+                Do not iron. Do not dry clean.
+              </a>
+            </div>
+          </div>
+          <div className={styles.CategoryBlock}>
+            <div className={styles.Spec}>
+              <a href={'#'}># of Returns: 15</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}># of Negative Reviews: Unknown</a>
+            </div>
+            <div className={styles.Spec}>
+              <a href={'#'}># of Somethings: Unknown</a>
+            </div>
+          </div>
+          <div className={styles.CategoryBlock}>
+            <h4>Is This Product Relavent To You?</h4>
+            <p>
+              Sign in to see reasons why you may or may not like this
+              based on your games, friends, and curators you follow.
+            </p>
+            <Button>Sign In</Button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
-
-{
-  /* <p>
-  REMEMBER THE ROSWELL RAYGUNS IN VERSATILE COMFORT. In the early
-  '00s, Nike Basketball created a fake '70s-era basketball team for
-  some fun, funky TV spots. The Nike Rayguns Basketball T-Shirt is a
-  play on those old ads with the "Roswell Rayguns" alien logo. It's
-  made from soft, comfortable cotton with a relaxed fit. Rayguns Alien
-  Logo The large "Roswell Rayguns" alien logo comes from the memorable
-  Nike Basketball commercials made back in the early '00s. Easy,
-  Everyday Comfort Everyday cotton fabric feels soft and lightweight.
-  The fit is relaxed and easy to wear with a versatile shape.
-</p>; */
-}

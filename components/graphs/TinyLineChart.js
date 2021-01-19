@@ -55,22 +55,17 @@ const data = [
   },
 ];
 
-export default class TinyLineChart extends PureComponent {
-  static jsfiddleUrl =
-    'https://jsfiddle.net/alidingling/exh283uh/';
-
-  render() {
-    return (
-      <ResponsiveContainer>
-        <LineChart data={data}>
-          <Line
-            type="monotone"
-            dataKey="pv"
-            stroke="#8884d8"
-            strokeWidth={2}
-          />
-        </LineChart>
-      </ResponsiveContainer>
-    );
-  }
+export default function TinyLineChart() {
+  return (
+    <ResponsiveContainer>
+      <LineChart data={data}>
+        <Line
+          type="monotone"
+          dataKey="pv"
+          stroke="#8884d8"
+          strokeWidth={2}
+        />
+      </LineChart>
+    </ResponsiveContainer>
+  );
 }

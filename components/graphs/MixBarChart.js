@@ -1,7 +1,8 @@
 import React, { PureComponent } from 'react';
 import {
-  LineChart,
-  Line,
+  BarChart,
+  Bar,
+  Cell,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -55,32 +56,26 @@ const data = [
   },
 ];
 
-{
-  /* <XAxis dataKey="name" />
-<YAxis orientation="right" /> */
-}
-export default function SimpleLineChart() {
+export default function MixBarChart() {
   return (
     <ResponsiveContainer>
-      <LineChart
+      <BarChart
         data={data}
         margin={{
-          top: 5,
-          right: 5,
-          left: 5,
+          top: 20,
+          right: 30,
+          left: 20,
           bottom: 5,
         }}>
         <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="name" />
+        <YAxis />
         <Tooltip />
         <Legend />
-        <Line
-          type="monotone"
-          dataKey="pv"
-          stroke="#8884d8"
-          activeDot={{ r: 8 }}
-        />
-        <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-      </LineChart>
+        <Bar dataKey="pv" stackId="a" fill="#8884d8" />
+        <Bar dataKey="amt" stackId="a" fill="#82ca9d" />
+        <Bar dataKey="uv" fill="#ffc658" />
+      </BarChart>
     </ResponsiveContainer>
   );
 }

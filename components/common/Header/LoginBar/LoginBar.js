@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './LoginBar.module.scss';
-
+import Button from '../../../ui/Button/Button';
 export default function LoginBar() {
   return (
     <div className={styles.LoginBar}>
@@ -11,8 +11,8 @@ export default function LoginBar() {
         </a>
       </div>
       <div>
-        <button>Create Account</button>
-        <button>Cart</button>
+        <Button>Create Account</Button>
+        <Button>Cart</Button>
       </div>
     </div>
   );

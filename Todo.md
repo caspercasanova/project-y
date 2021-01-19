@@ -1,7 +1,14 @@
+# Actions 
+  Increment/Decrement Likes
+  Add/Remove/Update Cart
+  Sign In/Out/Delete Account
+  Add to WishList
 
 
 
 ## Format Website and Generate Style
+  [] Color Paleete
+  [] Sign In
   [] Long Card, Small Card, Medium Card and Product Display 
   [] Profile Formatting
   [] Media Queries
