@@ -1,0 +1,15 @@
+.LatestProductCard {
+  min-width: 400px;
+  max-width: 586px;
+  margin-right: 16px;
+  flex: 0 0 auto;
+  & .LatestProductImage {
+    width: 100%;
+    height: 400px;
+    background-color: gray;
+  }
+  & .LatestProductInfo {
+    display: flex;
+    justify-content: space-between;
+  }
+}

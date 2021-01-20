@@ -2,7 +2,21 @@ import React, { Fragment } from 'react';
 import Image from 'next/image';
 import styles from './Product.module.scss';
 import Button from '../../ui/Button';
+import { useRouter } from 'next/router';
+
 export default function Product({ product }) {
+  const router = useRouter();
+  const { asPath } = router;
+
+  const testFunction = async () => {
+    console.log(asPath);
+    const data = await fetch(`/api/product/${asPath}`, {}).then(res =>
+      res.json()
+    );
+
+    console.log(data);
+  };
+
   return (
     <Fragment>
       <section className={styles.Product}>
@@ -38,7 +52,9 @@ export default function Product({ product }) {
         </header>
         <ImageCarousel />
         <div className={styles.ButtonContainer}>
-          <button className={styles.AddToCart}>Add To Cart</button>
+          <button onClick={testFunction} className={styles.AddToCart}>
+            Add To Cart
+          </button>
         </div>
       </section>
       <ProductAbout />

@@ -1,0 +1,11 @@
+.New_From_Us_Section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  & .New_From_Us_Header {
+  }
+  & .New_From_Us_Body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

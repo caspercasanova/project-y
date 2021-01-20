@@ -47,7 +47,6 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
   max-width: 800px;
   margin-top: 3rem;
 }
@@ -93,86 +92,8 @@
   }
 }
 /* ################ */
-.Featured_Product_Section {
-  width: 100%;
-
-  & .Featured_Product_Header {
-  }
-  & .Featured_Product_Body {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-  & .Featured_Product_Info {
-    max-width: 60ch;
-  }
-  & .Featured_Product_Image {
-  }
-  & .Featured_Product_Footer {
-  }
-}
 /* ############### */
 /* ############### */
-.New_From_Us_Section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  & .New_From_Us_Header {
-  }
-  & .New_From_Us_Body {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-.Large_Product_Card {
-  display: flex;
-  flex-direction: column;
-  max-width: 50%;
-  padding-left: 5px;
-  padding-right: 5px;
-  position: relative;
-  & .Large_Product_Header {
-  }
-  & .Large_Product_Image {
-  }
-  & .Large_Product_Chart {
-    width: 100%;
-    height: 130px;
-  }
-}
-
 /* ############### */
 /* ############### */
-.Latest_And_Greatest_Section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  .Latest_And_Greatest_Header {
-  }
-  .Latest_And_Greatest_Body {
-    width: 100%;
-    display: flex;
-    border: 1px solid green;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    overflow-y: hidden;
-  }
-}
 /* ############### */
-
-.LatestProductCard {
-  min-width: 400px;
-  max-width: 586px;
-  margin-right: 16px;
-  flex: 0 0 auto;
-  & .LatestProductImage {
-    width: 100%;
-    height: 400px;
-    background-color: gray;
-  }
-  & .LatestProductInfo {
-    display: flex;
-    justify-content: space-between;
-  }
-}

@@ -1,0 +1,18 @@
+.Featured_Product_Section {
+  width: 100%;
+
+  & .Featured_Product_Header {
+  }
+  & .Featured_Product_Body {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  & .Featured_Product_Info {
+    max-width: 60ch;
+  }
+  & .Featured_Product_Image {
+  }
+  & .Featured_Product_Footer {
+  }
+}
