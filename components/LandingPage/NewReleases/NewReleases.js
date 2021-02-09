@@ -9,34 +9,37 @@ export default function NewReleases() {
         <h3>New From Project-Y</h3>
       </header>
       <div className={styles.New_From_Us_Body}>
-        <LargeProductCard />
-        <LargeProductCard />
+        <LargeProductCard productName={'Product X'} />
+        <LargeProductCard productName={'Product F'} />
       </div>
     </section>
   );
 }
 
-const LargeProductCard = () => {
+const LargeProductCard = ({ productName }) => {
   return (
     <article className={styles.Large_Product_Card}>
       <header className={styles.Large_Product_Header}>
-        <h3>Product_X</h3>
+        <h3>{productName}</h3>
       </header>
       <figure className={styles.Large_Product_Image}>
         <Image
           src={'/images/eazy_e.png'}
-          width={680}
-          height={475}
           alt={'Large_product_Card'}
+          layout={'responsive'}
+          unsized
         />
       </figure>
       <div>
         <div>Product X:</div>
         <div>Price: $$120</div>
       </div>
-      <figure className={styles.Large_Product_Chart}>
-        <SimpleLineChart />
-      </figure>
     </article>
   );
 };
+
+{
+  /* <figure className={styles.Large_Product_Chart}>
+        <SimpleLineChart />
+      </figure> */
+}

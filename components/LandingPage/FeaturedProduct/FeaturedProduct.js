@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './FeaturedProduct.module.scss';
 import Image from 'next/image';
+import SimpleLineChart from '../../graphs/SimpleLineChart';
 export default function FeaturedProduct() {
   return (
     <section className={styles.Featured_Product_Section}>
@@ -15,13 +16,16 @@ export default function FeaturedProduct() {
             networks. The API key you use to authenticate the request
             determines whether the request is live mode or test mode.
           </p>
+          <div className={styles.LineChart}>
+            <SimpleLineChart />
+          </div>
         </div>
         <div className={styles.Featured_Product_Image}>
           <Image
             src={'/images/eazy_e.png'}
-            height={700}
-            width={600}
             alt={'something'}
+            unsized
+            priority
           />
         </div>
       </div>

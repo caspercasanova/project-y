@@ -1,0 +1,16 @@
+{
+  "title": "Project Y | Created By Nicholas Lopez",
+  "titleTemplate": "%s - Project Y",
+  "description": "A Project Created In Order To Get Nicholas Lopez A Career In Tech",
+  "openGraph": {
+    "type": "website",
+    "locale": "en_IE",
+    "url": "https://www.linkedin.com/in/310-nicholas-lopez/",
+    "site_name": "Get In Touch"
+  },
+  "twitter": {
+    "handle": "@project_y",
+    "site": "@project_y",
+    "cardType": "summary_large_image"
+  }
+}

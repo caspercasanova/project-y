@@ -9,8 +9,8 @@ export default function LandingBanner() {
           src={'/images/eazy_e.png'}
           alt={'banner'}
           layout="responsive"
-          width={1200}
-          height={700}
+          priority
+          unsized
         />
         <div className={styles.BannerText}>
           <h1>Next Level Thinking</h1>

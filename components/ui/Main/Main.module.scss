@@ -1,9 +1,7 @@
 .Main {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-
-  margin: 24px auto 48px;
+  width: 100%;
   & hr {
     width: 100%;
   }

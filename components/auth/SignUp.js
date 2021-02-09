@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import Input from '../ui/Input/Input';
+import React, { useState, useEffect, useCallback } from 'react';
+import Field from '../ui/Field/Field';
+import Button from '../ui/Button/Button';
 // TODO set it up
 // signup
 //
 export default function SignUp() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
-  const [password, setName] = useState('');
+  const [password, setPW] = useState('');
   const [dirty, setDirty] = useState(false);
 
   const handleSignUp = async e => {
@@ -33,12 +34,16 @@ export default function SignUp() {
 
   return (
     <form onSubmit={handleSignUp}>
-      <Input placeholder="name" />
-      <Input placeholder="email" />
-      <Input placeholder="password" />
-      <Input placeholder="street address" />
-      <Input placeholder="zip code" />
-      <button type="submit"> Submit</button>
+      <Field placeholder="First Name" />
+      <Field placeholder="Last Name" />
+      <Field placeholder="Email" />
+      <Field placeholder="Password" />
+      <Field placeholder="Street Address" />
+      <Field placeholder="Street Address 2" />
+      <Field placeholder="City" />
+      <Field placeholder="Zip Code" />
+      <Field placeholder="State" />
+      <Button type="submit"> Submit</Button>
     </form>
   );
 }
