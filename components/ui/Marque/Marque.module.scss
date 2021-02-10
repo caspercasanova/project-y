@@ -1,0 +1,14 @@
+.marque {
+  min-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-flow: flex-row;
+  align-items: center;
+
+  & > * {
+    display: flex;
+    width: 430px;
+  }
+}
