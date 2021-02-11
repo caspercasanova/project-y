@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './JoinClub.module.scss';
 import Ticker from 'react-ticker';
-import useInterval from '../../../../framework/utilities/useInterval';
+import useInterval from '../../../../lib/hooks/useInterval';
 export default function JoinClub() {
   return (
     <div className={styles.JoinClubContainer}>

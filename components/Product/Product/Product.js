@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './Product.module.scss';
 import Button from '../../ui/Button';
 import { useRouter } from 'next/router';
+// import ProductSlider from './ProductSlider/ProductSlider'
 
 export default function Product({ product }) {
   const router = useRouter();
@@ -51,6 +52,7 @@ export default function Product({ product }) {
           </div>
         </header>
         <ImageCarousel />
+        {/* <ProductSlider /> */}
         <div className={styles.ButtonContainer}>
           <button onClick={testFunction} className={styles.AddToCart}>
             Add To Cart

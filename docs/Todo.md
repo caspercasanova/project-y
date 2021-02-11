@@ -4,7 +4,18 @@
   Sign In/Out/Delete Account
   Add to WishList
 
-
+# Hooks TO Implement
+  useAuth
+  useCart
+    Add item
+    Remove Item
+    updateItem
+  wishlist
+    useList
+    addItem
+    removeItem
+  signUp
+  login
 
 ## Format Website and Generate Style
   [] Color Paleete
