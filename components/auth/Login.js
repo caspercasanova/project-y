@@ -1,32 +1,46 @@
-import React, { useState } from 'react';
-import { useUI } from '@components/ui/context';
+import React, { useState, useCallback, useEffect } from 'react';
+import { useUI } from '../ui/context';
 import Field from '../ui/Field/Field';
+import { validate } from 'email-validator';
+// convert login to hook
+// import useLogin from '../../framework/useLogin';
+
+const login = async ({ password, email }) => {
+  console.log(email, password);
+  const data = await fetch('/api/customers/login', {
+    method: 'POST',
+    body: { password, email },
+  }).then(res => res.json());
+  console.log(data);
+};
+
 export default function SignIn() {
+  const { setModalView, closeModal } = useUI();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
   const [dirty, setDirty] = useState(false);
   const [disabled, setDisabled] = useState(false);
-  const { setModalView, closeModal } = useUI();
 
   const handleLogin = async e => {
-    if (!dirty && !disabled) {
-      setDirty(true);
-      handleValidation();
-    }
+    // if (!dirty && !disabled) {
+    //   setDirty(true);
+    //   handleValidation();
+    // }
 
     try {
       setLoading(true);
       setMessage('');
-      // await login({
-      //   email,
-      //   password,
-      // })
+      login({
+        email,
+        password,
+      });
       setLoading(false);
       closeModal();
-    } catch ({ errors }) {
-      setMessage(errors[0].message);
+    } catch (errors) {
+      //setMessage(errors);
+      console.log(errors);
       setLoading(false);
     }
   };
@@ -61,14 +75,22 @@ export default function SignIn() {
             </a>
           </div>
         )}
-        <Field placeholder="Email" type="email" onChange={setEmail} />
+        <Field
+          placeholder="Email"
+          type="email"
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+        />
         <Field
           placeholder="Password"
           type="password"
-          onChange={setPassword}
+          value={password}
+          onChange={e => setPassword(e.target.value)}
         />
 
-        <button type="submit">Log In</button>
+        <button type="submit" onClick={() => handleLogin()}>
+          Submit
+        </button>
 
         <div className="pt-1 text-center text-sm">
           <span className="text-accents-7">

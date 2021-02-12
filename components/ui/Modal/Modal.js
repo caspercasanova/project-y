@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 import Portal from '@reach/portal';
 import styles from './Modal.module.scss';
-import Cross from '../../icons/Cross';
+import Cross from '../../icons/Cross.tsx';
 import {
   disableBodyScroll,
   enableBodyScroll,
@@ -29,24 +29,25 @@ export default function Modal({ children, onClose, open, onEnter }) {
       }
     }
     return () => {
-      window.removeEventListener('keydown', handlekey);
+      window.removeEventListener('keydown', handleKey);
       clearAllBodyScrollLocks();
     };
   }, [open, handleKey]);
 
   return (
     <Portal>
-      <div className={styles.backgroundOverlay}>
-        <div className={styles.modalCard}>
-          <div className={styles.modalHeader}>
-            <button onClick={onClose} aria-label="Close Modal">
-              <Cross />
-            </button>
+      {open ? (
+        <div className={styles.backgroundOverlay}>
+          <div className={styles.modalCard} ref={ref}>
+            <div className={styles.modalHeader}>
+              <button onClick={onClose} aria-label="Close Modal">
+                <Cross />
+              </button>
+            </div>
+            {children}
           </div>
-
-          {children}
         </div>
-      </div>
+      ) : null}
     </Portal>
   );
 }
