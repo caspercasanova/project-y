@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 import Main from '../../ui/Main/Main';
 import SignInView from '../../auth/SignInView/SignInView';
 import { useUI } from '../../ui/context';
-// TODO: ADD FEATURES AND API PROVIDER
+// TODO: ADD FEATURES AND API PROVIDER AND POSSIBLY CONTAINER
 
 export default function Layout({ children }) {
   const { displayModal, closeModal, modalView } = useUI();

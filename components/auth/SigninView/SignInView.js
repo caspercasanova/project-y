@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './SignInView.module.scss';
-import SignUp from '../SignUp';
+import Register from '../Register';
 import Login from '../Login';
 import ForgotPW from '../ForgotPW';
 
@@ -21,7 +21,7 @@ export default function SignInView() {
         </div>
         <div>
           {currentPage == 'Sign In' && <Login />}
-          {currentPage == 'Sign Up' && <SignUp />}
+          {currentPage == 'Sign Up' && <Register />}
         </div>
         <button>Continue As A Guest</button>
         <button>Forgot Your PW?</button>

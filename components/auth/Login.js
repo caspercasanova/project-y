@@ -28,7 +28,7 @@ export default function SignIn() {
     //   setDirty(true);
     //   handleValidation();
     // }
-
+    e.preventDefault();
     try {
       setLoading(true);
       setMessage('');
