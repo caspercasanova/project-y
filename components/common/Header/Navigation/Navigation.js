@@ -4,7 +4,10 @@ import Link from 'next/link';
 
 export default function Navigation() {
   return (
-    <div>
+    <div className={styles.navagationContainer}>
+      <div className={styles.logo}>
+        <img src={'/images/Project_Y_logo.png'} alt="logo" />
+      </div>
       <nav className={styles.NavigationBar}>
         <Link href={'/'}>
           <div className={styles.NavLink}>Home</div>
@@ -12,7 +15,6 @@ export default function Navigation() {
         <Link href={'/profile'}>
           <div className={styles.NavLink}>Profile</div>
         </Link>
-
         <Link href={'/products'}>
           <div className={styles.NavLink}>Products</div>
         </Link>
@@ -20,6 +22,9 @@ export default function Navigation() {
           <div className={styles.NavLink}>About</div>
         </Link>
       </nav>
+      <div className={styles.LittlePhrase}>
+        <i>Stay Up</i>
+      </div>
     </div>
   );
 }
