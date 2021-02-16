@@ -3,7 +3,6 @@ import Modal from '../../ui/Modal/Modal';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Main from '../../ui/Main/Main';
-import SignInView from '../../auth/SignInView/SignInView';
 import FiltersView from '../../ProductGrid/FiltersView/FiltersView';
 
 import { useUI } from '../../ui/context';

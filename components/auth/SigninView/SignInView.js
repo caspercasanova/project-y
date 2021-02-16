@@ -3,8 +3,8 @@ import styles from './SignInView.module.scss';
 import Register from '../Register';
 import Login from '../Login';
 import ForgotPW from '../ForgotPW';
-
 import Button from '../../ui/Button/Button';
+
 export default function SignInView() {
   const [currentPage, setCurrentPage] = useState('Sign In');
   return (
