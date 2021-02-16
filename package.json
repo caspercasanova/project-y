@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@reach/portal": "^0.13.0",
+    "@stitches/react": "0.0.2",
     "@stripe/stripe-js": "^1.11.0",
     "body-scroll-lock": "^3.1.5",
     "email-validator": "^2.0.4",

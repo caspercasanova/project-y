@@ -10,7 +10,7 @@ export default function Navigation() {
       </div>
       <nav className={styles.NavigationBar}>
         <Link href={'/'}>
-          <div className={styles.NavLink}>Home</div>
+          <div className={styles.NavLink}>New Releases</div>
         </Link>
         <Link href={'/profile'}>
           <div className={styles.NavLink}>Profile</div>

@@ -4,6 +4,8 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Main from '../../ui/Main/Main';
 import SignInView from '../../auth/SignInView/SignInView';
+import FiltersView from '../../ProductGrid/FiltersView/FiltersView';
+
 import { useUI } from '../../ui/context';
 // TODO: ADD FEATURES AND API PROVIDER AND POSSIBLY CONTAINER
 
@@ -16,6 +18,7 @@ export default function Layout({ children }) {
       <Footer />
       <Modal open={displayModal} onClose={closeModal}>
         {modalView === 'LOGIN_VIEW' && <SignInView />}
+        {modalView === 'FILTERS_VIEW' && <FiltersView />}
       </Modal>
     </div>
   );

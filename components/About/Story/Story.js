@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Story.module.scss';
 import SimpleLineChart from '../../graphs/SimpleLineChart';
+import AdsStats from './AdsStats/AdsStats';
+import MarketingChannels from './MarketingChannels/MarketingChannels';
 export default function Story() {
   return (
     <>
@@ -98,6 +100,8 @@ export default function Story() {
           </figure>
         </footer>
       </section>
+      <AdsStats />
+      <MarketingChannels />
     </>
   );
 }

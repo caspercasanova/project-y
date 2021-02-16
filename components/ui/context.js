@@ -4,7 +4,7 @@ const initialState = {
   // displaySidebar: false,
   // displayDropdown: false,
   displayModal: false,
-  modalView: 'LOGIN_VIEW',
+  modalView: 'LOGIN_VIEW', // FILTERS_VIEW FORGOT_PASSWORD_VIEW CREATE_ACCOUNT
   // displayToast: false,
   // toastText: '',
 };
