@@ -90,7 +90,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 8px;
-  background: #24acc1;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 .DetailsLeftColumn {
@@ -105,22 +106,18 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
-  background: rgba(0, 0, 0, 0.2);
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0.5) 100%
-  );
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 20px;
 }
 
 .Spec {
   min-height: 26px;
-  background: rgba(103, 193, 245, 0.1);
   padding-top: 4px;
   padding-left: 8px;
   padding-right: 8px;
   margin-bottom: 1px;
-  color: #67c1f5;
+  color: #6713bf;
   &::selection {
     background: #54a5d4;
   }

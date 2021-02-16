@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Settings from '../Settings/Settings';
 import OrderHistory from '../OrderHistory/OrderHistory';
-import Main from '../../ui/Main/Main';
 import RobinhoodNav from '../../ui/RobinhoodNav/RobinhoodNav';
-
+import styles from './ProfileView.module.scss';
 const purchasesArrayDefault = [
   {
     productList: [
@@ -47,7 +46,7 @@ export default function ProfileView() {
   const [page, setPage] = useState('Order History');
 
   return (
-    <Main>
+    <div className={styles.ProfileView}>
       <RobinhoodNav
         setPage={setPage}
         currentlyActive={page}
@@ -56,6 +55,6 @@ export default function ProfileView() {
 
       {page == 'Order History' && <OrderHistory />}
       {page == 'Settings' && <Settings />}
-    </Main>
+    </div>
   );
 }

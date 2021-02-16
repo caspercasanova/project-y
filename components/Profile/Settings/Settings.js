@@ -10,7 +10,7 @@ export default function Settings() {
   };
 
   return (
-    <div>
+    <section className={styles.SettingsSection}>
       <h2>Profile</h2>
       <div>
         <h5>Display Name:</h5>
@@ -23,6 +23,6 @@ export default function Settings() {
       <div>
         <Button>Delete Account</Button>
       </div>
-    </div>
+    </section>
   );
 }

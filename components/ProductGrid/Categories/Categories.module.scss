@@ -1,0 +1,15 @@
+.categories {
+  display: flex;
+  font-size: 18px;
+  line-height: 1.5;
+  padding-top: 8px;
+  text-align: center;
+  white-space: nowrap;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  overflow-x: auto;
+}
+
+.category {
+  padding: 0px 16px 14px;
+  font-weight: 500;
+}

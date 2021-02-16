@@ -1,0 +1,13 @@
+.JoinBanner {
+  max-width: 100%;
+}
+
+.ImageContainer {
+  width: 100%;
+  & img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+  }
+}

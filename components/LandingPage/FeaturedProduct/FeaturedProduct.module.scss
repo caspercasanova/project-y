@@ -1,45 +1,41 @@
-$tablet: 768px;
-
 .Featured_Product_Section {
-  width: 100%;
+  border: 1px solid green;
 }
-.Featured_Product_Header {
-}
-.Featured_Product_Body {
+
+.Body {
   display: flex;
-
-  justify-content: space-between;
-  flex-direction: row;
-  @media (min-width: $tablet) {
-    flex-direction: column-reverse;
-  }
 }
 
-.Featured_Product_Info {
+.leftContainer {
+  flex: 1;
+  padding: 15px 20px;
+  border: 1px solid red;
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  @media (min-width: $tablet) {
-    flex-direction: row;
-  }
-  p {
-    padding: 10px;
-    @media (min-width: $tablet) {
-      height: auto;
-      flex: 1;
-    }
-  }
-  .LineChart {
-    position: relative;
-    @media (min-width: $tablet) {
-      height: auto;
-      flex: 1;
-    }
+  & p {
+    font-size: 1.2rem;
   }
 }
+.description {
+  flex: 1;
+}
 
-.Featured_Product_Image {
+.LineChart {
+  flex: 1;
+}
+
+.rightContainer {
+  flex: 1;
+  border: 1px solid green;
+  padding: 15px 20px;
+}
+
+.imageContainer {
   width: 100%;
-  position: relative;
-  height: auto;
+  height: 100%;
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }

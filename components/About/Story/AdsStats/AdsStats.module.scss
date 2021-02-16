@@ -1,0 +1,17 @@
+.AdStats {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.StatContainer {
+  display: flex;
+  position: relative;
+}
+
+.stat {
+  width: 25%;
+  height: auto;
+}

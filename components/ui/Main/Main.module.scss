@@ -1,8 +1,15 @@
+$laptopL: 1440px;
 .Main {
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-height: 100%;
   & hr {
     width: 100%;
+  }
+
+  @media (min-width: $laptopL) {
+    padding-right: 48px;
+    padding-left: 48px;
   }
 }
