@@ -1,0 +1,12 @@
+.Section {
+  display: flex;
+  flex-direction: column;
+  & h2 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.row {
+  display: flex;
+}

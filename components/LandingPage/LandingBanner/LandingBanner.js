@@ -7,7 +7,9 @@ export default function LandingBanner() {
     <section className={styles.LandingBannerSection}>
       <div className={styles.PictureContainer}>
         <img
-          src={'/images/eazy_e.png'}
+          src={
+            'https://static.nike.com/a/images/f_auto/dpr_1.0/w_1242,c_limit/315e7ecf-8c74-494e-a630-d75202ec5f92/nike-just-do-it.jpg'
+          }
           alt={'banner'}
           // layout="responsive"
           // priority
