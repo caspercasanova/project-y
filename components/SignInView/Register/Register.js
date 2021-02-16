@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import Field from '../ui/Field/Field';
-import Button from '../ui/Button/Button';
+import Field from '../../ui/Field/Field';
+import Button from '../../ui/Button/Button';
 import { validate } from 'email-validator';
 
 export default function Register() {

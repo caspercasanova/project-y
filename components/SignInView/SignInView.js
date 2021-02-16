@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styles from './SignInView.module.scss';
-import Register from '../Register';
-import Login from '../Login';
-import ForgotPW from '../ForgotPW';
-import Button from '../../ui/Button/Button';
+import Register from './Register/Register';
+import Login from './Login/Login';
+import ForgotPW from './ForgotPW/ForgotPW';
+import Button from '../ui/Button/Button';
 
 export default function SignInView() {
   const [currentPage, setCurrentPage] = useState('Sign In');

@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-
-import Field from '../ui/Field/Field';
+import Field from '../../ui/Field/Field';
 import { validate } from 'email-validator';
 
 export default function ForgotPW() {

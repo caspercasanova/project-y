@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { useUI } from '../ui/context';
-import Field from '../ui/Field/Field';
+import { useUI } from '../../ui/context';
+import Field from '../../ui/Field/Field';
 import { validate } from 'email-validator';
 // convert login to hook
 // import useLogin from '../../framework/useLogin';
