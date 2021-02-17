@@ -1,5 +1,7 @@
 import React from 'react';
 import Field from '../../ui/Field/Field';
+import styles from './ContactUs.module.scss';
+import Section from '../../ui/Section/Section';
 export default function ContactUs() {
   const onSubmit = e => {
     e.preventDefault();
@@ -9,8 +11,7 @@ export default function ContactUs() {
 
   return (
     <div>
-      <section>
-        <h3>CONTACT</h3>
+      <Section header={'Contact'}>
         <div>
           <p>
             For any questions or concerns email us at:
@@ -22,38 +23,41 @@ export default function ContactUs() {
             Available Business Day
           </p>
         </div>
-      </section>
-
-      <section>
-        <h3>Apply for SponsorShip</h3>
-        <div>
-          <form onSubmit={onSubmit}>
-            <Field placeholder="Name" />
-            <Field placeholder="Email" />
-            <Field placeholder="Portfolio" />
-            <Field placeholder="Twitter" />
-            <Field placeholder="Youtube" />
-            <Field placeholder="Instagram" />
-            <Field placeholder="Facebook" />
-            <Field placeholder="About" />
-          </form>
-        </div>
-      </section>
-      <section>
-        <h3>Be a Model!</h3>
-        <div>
-          <form>
-            <Field placeholder="Name" />
-            <Field placeholder="Email" />
-            <Field placeholder="Portfolio" />
-            <Field placeholder="Twitter" />
-            <Field placeholder="Youtube" />
-            <Field placeholder="Instagram" />
-            <Field placeholder="Facebook" />
-            <Field placeholder="About" />
-          </form>
-        </div>
-      </section>
+      </Section>
+      <Section>
+        <Section header={'Apply for Sponsorship'}>
+          <div>
+            <form onSubmit={onSubmit}>
+              <fieldset className={styles.Sponsorship_FieldSet}>
+                <Field placeholder="Name" />
+                <Field placeholder="Email" />
+                <Field placeholder="Portfolio" />
+                <Field placeholder="Twitter" />
+                <Field placeholder="Youtube" />
+                <Field placeholder="Instagram" />
+                <Field placeholder="Facebook" />
+                <Field placeholder="About" />
+              </fieldset>
+            </form>
+          </div>
+        </Section>
+        <Section header={'Be a Model'}>
+          <div>
+            <form>
+              <fieldset className={styles.Sponsorship_FieldSet}>
+                <Field placeholder="Name" />
+                <Field placeholder="Email" />
+                <Field placeholder="Portfolio" />
+                <Field placeholder="Twitter" />
+                <Field placeholder="Youtube" />
+                <Field placeholder="Instagram" />
+                <Field placeholder="Facebook" />
+                <Field placeholder="About" />
+              </fieldset>
+            </form>
+          </div>
+        </Section>
+      </Section>
     </div>
   );
 }

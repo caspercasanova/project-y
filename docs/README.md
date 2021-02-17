@@ -3,6 +3,11 @@
 # Objective:
   Gain experience and prove to myself I can design an Ecommerce website.
   To add a Dark Mode To Nike . com
+  Authorization Framework
+  F L U X architecture for UI
+  Stripes API Integration 
+  MongoDB Seeding File and random product Generation
+  Dynamic 
 # What I Learned:
   CSS and Sass is such a huge amount of time, it really has the potential to take away from programming the application. Design is not easy and Frontend Designers deserve all the pay they can get. It seems easy, but I will always do my part in paying homage to front end designers. 
 
@@ -19,7 +24,8 @@
   Next.js,
   Vercel 
   Stripe, 
-  Sass
+  Sass,
+  Stiches 
 # Summary: 
   It is not perfect, but I am at a point where I am proud of the work and am excited to see how it will evolve over the weeks, months, years ahead. 
 # Links:

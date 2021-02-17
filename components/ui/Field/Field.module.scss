@@ -3,32 +3,31 @@
   margin-top: 25px;
   margin-bottom: 10px;
   /* font-family: 'digital-7'; */
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 20px;
 }
 
 .Input {
   width: 100%;
+  max-width: 100%;
   background: transparent;
-  padding: 0px 0px 10px 0px;
-  border: none;
-  border-left: 1px solid purple;
-  border-bottom: 1px solid purple;
-  color: purple;
+  color: #000000;
   font-size: 16px;
-  padding-left: 0.3em;
-  letter-spacing: 0.3em;
-  transition: 0.5s;
+  transition: all 250ms ease-in-out;
+  line-height: 16px;
+  padding: 12px 10px;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
   &:focus {
-    outline: 0;
+    border-color: #000000;
   }
 }
 .Label {
-  position: absolute;
   display: block;
-  padding: 0.5em;
-  transition: 0.5s;
-  cursor: inherit;
-  top: -80%;
-  color: purple;
+  padding-bottom: 6px;
+  text-align: left;
   & .error {
     color: red;
   }

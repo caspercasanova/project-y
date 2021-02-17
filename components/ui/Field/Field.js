@@ -14,6 +14,10 @@ const Field = ({
 }) => {
   return (
     <div className={styles.FieldContainer}>
+      <label className={styles.Label} htmlFor={id} error={error}>
+        {error ? error : label}
+        {required ? '*' : null}
+      </label>
       <input
         className={styles.Input}
         id={id}
@@ -24,9 +28,6 @@ const Field = ({
         value={value}
         onChange={onChange}
       />
-      <label className={styles.Label} htmlFor={id} error={error}>
-        {error ? error : label}
-      </label>
     </div>
   );
 };

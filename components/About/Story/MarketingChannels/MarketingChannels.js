@@ -17,7 +17,7 @@ export default function MarketingChannels() {
     <div className={styles.MarketingChannels}>
       <h2>Marketing Channels</h2>
       {sources.map((src, index) => (
-        <Stat index={index} source={src} />
+        <Stat key={index} source={src} />
       ))}
     </div>
   );
