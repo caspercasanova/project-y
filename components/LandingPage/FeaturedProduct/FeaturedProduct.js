@@ -2,14 +2,29 @@ import React from 'react';
 import styles from './FeaturedProduct.module.scss';
 import Image from 'next/image';
 import SimpleLineChart from '../../graphs/SimpleLineChart';
+
+import Section from '../../ui/Section/Section';
 export default function FeaturedProduct() {
   return (
-    <section className={styles.Featured_Product_Section}>
-      <header>
-        <h1>Featured Product</h1>
-      </header>
+    <Section header={'Featured Product'}>
       <div className={styles.Body}>
         <div className={styles.leftContainer}>
+          <div className={styles.description}>
+            <p>
+              You can use the Stripe API in test mode, which does not
+              affect your live data or interact with the banking
+              networks. The API key you use to authenticate the
+              request determines whether the request is live mode or
+              test mode.
+            </p>
+            <p>
+              You can use the Stripe API in test mode, which does not
+              affect your live data or interact with the banking
+              networks. The API key you use to authenticate the
+              request determines whether the request is live mode or
+              test mode.
+            </p>
+          </div>
           <div className={styles.description}>
             <p>
               You can use the Stripe API in test mode, which does not
@@ -29,22 +44,6 @@ export default function FeaturedProduct() {
           <div className={styles.LineChart}>
             <SimpleLineChart />
           </div>
-          <div className={styles.description}>
-            <p>
-              You can use the Stripe API in test mode, which does not
-              affect your live data or interact with the banking
-              networks. The API key you use to authenticate the
-              request determines whether the request is live mode or
-              test mode.
-            </p>
-            <p>
-              You can use the Stripe API in test mode, which does not
-              affect your live data or interact with the banking
-              networks. The API key you use to authenticate the
-              request determines whether the request is live mode or
-              test mode.
-            </p>
-          </div>
         </div>
         <div className={styles.rightContainer}>
           <div className={styles.imageContainer}>
@@ -56,7 +55,7 @@ export default function FeaturedProduct() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
 
@@ -73,7 +72,6 @@ https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/18d81d74-e537-4
 https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/cca8e45b-9dac-414e-bb98-5aa51ac62f77/sportswear-heritage-windrunner-mens-corduroy-jacket-VdJfdz.jpg
 
 */
-
 
 /* Fleece Pants
 https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/9db5b14f-0b6d-4eca-84a8-ff93597b99ea/sportswear-club-fleece-mens-cargo-pants-hZtP5V.jpg
@@ -99,7 +97,6 @@ https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1e3c68e7-fccf-4
 
 https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1a8d37c1-8ccd-464b-bfd8-95424b509de4/sportswear-club-fleece-mens-cargo-pants-hZtP5V.jpg
 */
-
 
 /* Windrunner Wild Run
 

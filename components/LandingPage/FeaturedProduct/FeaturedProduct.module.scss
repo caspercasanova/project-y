@@ -1,33 +1,39 @@
-.Featured_Product_Section {
-  border: 1px solid green;
-}
+$tablet: 768px;
 
+$laptop: 1024px;
 .Body {
   display: flex;
+  @media (min-width: $tablet) {
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  @media (min-width: $laptop) {
+    flex-direction: row;
+  }
 }
 
 .leftContainer {
-  flex: 1;
+  flex: 1 0;
   padding: 15px 20px;
-  border: 1px solid red;
-  position: relative;
   display: flex;
   flex-direction: column;
+}
+.description {
   & p {
     font-size: 1.2rem;
   }
 }
-.description {
-  flex: 1;
-}
 
 .LineChart {
-  flex: 1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-height: 400px;
 }
 
 .rightContainer {
-  flex: 1;
-  border: 1px solid green;
+  flex: 1 0;
   padding: 15px 20px;
 }
 
