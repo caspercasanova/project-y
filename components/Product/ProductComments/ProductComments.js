@@ -1,20 +1,16 @@
 import React, { useState } from 'react';
 import styles from './ProductComments.module.scss';
-
+import Section from '../../ui/Section/Section';
 export default function ProductComments({ comments }) {
   return (
-    <section className={styles.CommentSection}>
-      <header className={styles.CommentSectionHeader}>
-        <h3>Product Comments</h3>
-        <div>Product Comments Icon</div>
-      </header>
+    <Section header={'Product Comments'}>
       <div className={styles.CommentList}>
         <Comment />
         <Comment />
         <Comment />
+        <div>Must Login & Purchase To Leave A Review</div>
       </div>
-      <div>Must Login & Purchase To Leave A Review</div>
-    </section>
+    </Section>
   );
 }
 
@@ -23,7 +19,9 @@ const Comment = () => {
     <article className={styles.CommentCard}>
       <header className={styles.Commenter}>
         <div className={styles.CommenterProfile}>
-          <div className={styles.CommenterProfilePic}>Img</div>
+          <div className={styles.CommentProfilePic}>
+            <img src={'/images/projectY.png'} />
+          </div>
           <div>
             <h4>Tony Blair</h4>
             <h6>8 products in account</h6>
@@ -33,7 +31,6 @@ const Comment = () => {
       </header>
       <aside className={styles.CommentPortion}>
         <header>
-          <div>Img</div>
           <div>
             <h4>Recommended</h4>
             <h6>12 Days Since Purchase</h6>
