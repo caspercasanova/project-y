@@ -3,6 +3,8 @@ $mobileM: 375px;
 $mobileL: 425px;
 $tablet: 768px;
 $laptop: 1024px;
+$laptopL: 1440px;
+
 .Product_Grid {
   display: grid;
   grid-gap: 5px;
@@ -19,7 +21,7 @@ $laptop: 1024px;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: $laptop) {
+  @media (min-width: $laptopL) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
