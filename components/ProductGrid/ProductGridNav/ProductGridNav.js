@@ -7,7 +7,6 @@ export default function ProductGridNav() {
 
   return (
     <div className={styles.GridNav}>
-      <input />
       <button
         onClick={() => {
           setModalView('FILTERS_VIEW');

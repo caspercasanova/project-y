@@ -94,21 +94,18 @@ export const UIProvider = props => {
   //     : dispatch({ type: 'OPEN_SIDEBAR' })
   // const closeSidebarIfPresent = () =>
   //   state.displaySidebar && dispatch({ type: 'CLOSE_SIDEBAR' })
-
   // const openDropdown = () => dispatch({ type: 'OPEN_DROPDOWN' })
   // const closeDropdown = () => dispatch({ type: 'CLOSE_DROPDOWN' })
-
   const openModal = () => dispatch({ type: 'OPEN_MODAL' });
   const closeModal = () => dispatch({ type: 'CLOSE_MODAL' });
-
   // const openToast = () => dispatch({ type: 'OPEN_TOAST' })
   // const closeToast = () => dispatch({ type: 'CLOSE_TOAST' })
-
   // const setUserAvatar = (value: string) => dispatch({ type: 'SET_USER_AVATAR', value })
 
   const setModalView = view =>
     dispatch({ type: 'SET_MODAL_VIEW', view });
 
+  // Prevents Re-Renders of all Context Consumers :D
   const value = useMemo(
     () => ({
       ...state,

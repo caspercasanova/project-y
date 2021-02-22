@@ -4,6 +4,7 @@ import styles from './Product.module.scss';
 import Button from '../../ui/Button';
 import { useRouter } from 'next/router';
 import Section from '../../ui/Section/Section';
+import Tag from '../../ui/Tag/Tag';
 // import ProductSlider from './ProductSlider/ProductSlider'
 
 export default function Product({ product }) {
@@ -44,11 +45,11 @@ export default function Product({ product }) {
             <div>
               Popular User Defined Tags for this product.
               <div className={styles.tagContainer}>
-                <div className={styles.tag}>Sick</div>
-                <div className={styles.tag}>Leading The Charge</div>
-                <div className={styles.tag}>Spearheading Change</div>
-                <div className={styles.tag}>Str8 WestCoastin</div>
-                <div className={styles.tag}>Feelin Rich</div>
+                <Tag>Sick</Tag>
+                <Tag>Leading The Charge</Tag>
+                <Tag>Spearhead</Tag>
+                <Tag>Str8 WestCoastin</Tag>
+                <Tag>Feeling Rich</Tag>
               </div>
             </div>
           </header>

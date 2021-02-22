@@ -8,7 +8,7 @@ import Button from '../ui/Button/Button';
 export default function SignInView() {
   const [currentPage, setCurrentPage] = useState('Sign In');
   return (
-    <div>
+    <div className={styles.SignInView}>
       <h2>Welcome To Project Y</h2>
       <div className={styles.SignInContainer}>
         <div>

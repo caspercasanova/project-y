@@ -1,19 +1,20 @@
 import React from 'react';
 import styles from './Categories.module.scss';
+import Tag from '../../ui/Tag/Tag';
 
 export default function Categories() {
   return (
     <div className={styles.categories}>
-      <div className={styles.category}>LifeStyle</div>
-      <div className={styles.category}>Running</div>
-      <div className={styles.category}>BasketBall</div>
-      <div className={styles.category}>Football</div>
-      <div className={styles.category}>Soccer</div>
-      <div className={styles.category}>Training & Gym</div>
-      <div className={styles.category}>Skateboard</div>
-      <div className={styles.category}>Track and Field</div>
-      <div className={styles.category}>Walking</div>
-      <div className={styles.category}>Shoes Under $100</div>
+      <Tag>LifeStyle</Tag>
+      <Tag>Running</Tag>
+      <Tag>BasketBall</Tag>
+      <Tag>Football</Tag>
+      <Tag>Soccer</Tag>
+      <Tag>Training & Gym</Tag>
+      <Tag>Skateboard</Tag>
+      <Tag>Track and Field</Tag>
+      <Tag>Walking</Tag>
+      <Tag>Shoes Under $100</Tag>
     </div>
   );
 }

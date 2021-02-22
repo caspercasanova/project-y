@@ -4,7 +4,7 @@ import { ManagedUIContext } from '../components/ui/context';
 function MyApp({ Component, pageProps }) {
   return (
     <ManagedUIContext>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </ManagedUIContext>
   );
 }
