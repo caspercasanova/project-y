@@ -1,12 +1,12 @@
 import React from 'react';
-import Image from 'next/image';
 import styles from './Product.module.scss';
 import Button from '../../ui/Button';
 import { useRouter } from 'next/router';
 import Section from '../../ui/Section/Section';
-
-// import ProductSlider from './ProductSlider/ProductSlider'
-
+import ProductImages from './ProductImages/ProductImages';
+import ProductAbout from './ProductAbout/ProductAbout';
+import AddToCartForm from './AddToCartForm/AddToCartForm';
+import ProductHeader from './ProductHeader/ProductHeader';
 export default function Product({ product }) {
   const router = useRouter();
   const { asPath } = router;
@@ -21,59 +21,19 @@ export default function Product({ product }) {
   };
 
   return (
-    <>
-      <Section className={styles.Product}>
-        <div className={styles.ProductBody}>
-          <ImageCarousel />
-          {/* <ProductSlider /> */}
-        </div>
-      </Section>
-      <ProductAbout />
-    </>
-  );
-}
-
-const ImageCarousel = () => {
-  return (
-    <div>
-      <figure className={styles.Image_Card}>
-        <img src={'/images/eazy_e.png'} alt={'Product Image'} />
-      </figure>
+    <div className={styles.ProductBody}>
+      <div className={styles.PictureSection}>
+        <ProductImages />
+      </div>
+      <div className={styles.Sidebar}>
+        <ProductHeader />
+        <AddToCartForm />
+        <ProductAbout />
+        <ProductDetails />
+      </div>
     </div>
   );
-};
-
-const ProductAbout = () => {
-  return (
-    <>
-      <Section header={'About'}>
-        <div className={styles.AboutBody}>
-          <p>REMEMBER THE ROSWELL RAYGUNS IN VERSATILE COMFORT. </p>
-          <p>
-            In the early '00s, Nike Basketball created a fake '70s-era
-            basketball team for some fun, funky TV spots.
-          </p>
-          <p>
-            The Nike Rayguns Basketball T-Shirt is a play on those old
-            ads with the "Roswell Rayguns" alien logo. It's made from
-            soft, comfortable cotton with a relaxed fit.
-          </p>
-          <p>
-            Rayguns Alien Logo The large "Roswell Rayguns" alien logo
-            comes from the memorable Nike Basketball commercials made
-            back in the early '00s.
-          </p>
-          <p>
-            Easy, Everyday Comfort Everyday cotton fabric feels soft
-            and lightweight. The fit is relaxed and easy to wear with
-            a versatile shape.
-          </p>
-        </div>
-      </Section>
-      <ProductDetails />
-    </>
-  );
-};
+}
 
 const ProductDetails = () => {
   return (
@@ -83,17 +43,16 @@ const ProductDetails = () => {
           <div className={styles.DetailsLeftColumn}>
             <div className={styles.CategoryBlock}>
               <div className={styles.Spec}>
-                <a href={'#'}>Single Player</a>
+                Recent Reviews: Very Positive - 8430 user reviews
               </div>
               <div className={styles.Spec}>
-                <a href={'#'}>Online PvP</a>
+                All Reviews: Very Positive - 8430 user reviews
               </div>
               <div className={styles.Spec}>
-                <a href={'#'}>Steam Achievements</a>
+                Release Date: Dec 9 2019
               </div>
-              <div className={styles.Spec}>
-                <a href={'#'}>In-App Purchases</a>
-              </div>
+              <div className={styles.Spec}>Developer: Project Y</div>
+              <div className={styles.Spec}>Publisher: Product Y</div>
             </div>
             <div className={styles.CategoryBlock}>
               <div>

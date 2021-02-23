@@ -12,7 +12,7 @@ export default function AddToCartForm() {
   return (
     <div className={styles.AddToCartForm}>
       <form onSubmit={handleAddToCart}>
-        <fieldset>
+        <fieldset className={styles.ColorWay}>
           <Color
             src={
               'https://static.nike.com/a/images/t_PDP_144_v1/f_auto/nxmp8kodn5ufnd2ypr6f/sportswear-leg-a-see-womens-bike-shorts-5TBrgm.jpg'
@@ -34,7 +34,7 @@ export default function AddToCartForm() {
             }
           />
         </fieldset>
-        <fieldset>
+        <fieldset className={styles.size_guide}>
           <Size>XS (0-2)</Size>
           <Size>S (0-2)</Size>
           <Size>M (8-10)</Size>
@@ -44,7 +44,7 @@ export default function AddToCartForm() {
         </fieldset>
 
         <div className={styles.ButtonContainer}>
-          <button type={submit} className={styles.AddToCart}>
+          <button type={'submit'} className={styles.AddToCart}>
             Add To Cart
           </button>
         </div>
@@ -56,7 +56,7 @@ export default function AddToCartForm() {
 const Color = ({ src }) => {
   return (
     <>
-      <div classname={styles.color}>
+      <div className={styles.color}>
         <img src={src} />
       </div>
     </>
@@ -65,7 +65,7 @@ const Color = ({ src }) => {
 const Size = ({ children }) => {
   return (
     <>
-      <label>{children}</label>
+      <div className={styles.available}>{children}</div>
     </>
   );
 };

@@ -25,3 +25,6 @@ export const { styled, css } = createStyled({
 // $laptop: 1024px;
 // $laptopL: 1440px;
 // $desktop: 2560px;
+// font-size: 16;
+//     line-height: 1.75;
+//     letter-spacing: 1px;

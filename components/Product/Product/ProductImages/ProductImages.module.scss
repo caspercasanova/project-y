@@ -1,0 +1,35 @@
+$laptop: 1024px;
+
+.ImagesContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  // padding-left: 40px;
+  // padding-right: 40px;
+  // padding-top: 0px;
+  // border: 1px solid red;
+  overflow-x: scroll;
+  @media (min-width: $laptop) {
+    flex-flow: row wrap;
+  }
+}
+
+.lg_img {
+  height: auto;
+  width: 100%;
+  flex: 1;
+  @media (min-width: $laptop) {
+    flex: 0 50%;
+  }
+  // border: 1px solid green;
+  max-width: 450px;
+  padding: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  filter: invert(5%);
+
+  & img {
+    width: 100%;
+    height: auto;
+    object-fit: center;
+  }
+}

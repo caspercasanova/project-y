@@ -1,0 +1,71 @@
+.AddToCartForm {
+  display: flex;
+  flex-direction: column;
+}
+.ButtonContainer {
+  width: 100%;
+}
+
+.AddToCart {
+  width: 100%;
+  cursor: pointer;
+  padding: 18px 24px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  background: rgba(0, 0, 0, 1);
+  &:hover {
+    background: rgba(0, 0, 0, 0.75);
+  }
+}
+.ColorWay {
+  display: flex;
+}
+
+.color {
+  width: 69px;
+  height: 69px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid black;
+  }
+  & img {
+    width: 100%;
+    height: auto;
+    object-fit: center;
+  }
+}
+
+.size_guide {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 7px;
+  padding: 1px;
+  border-radius: 4px;
+}
+
+.available {
+  list-style: none;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  color: rgb(17, 17, 17);
+  height: 48px;
+  box-shadow: rgb(17, 17, 17, 0.2) 0px 0px 0px 1px inset;
+  border-radius: 4px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid black;
+  }
+}
+
+.selectedSize {
+  background: rgb(17, 17, 17) none repeat scroll 0% 0%;
+  color: rgb(255, 255, 255);
+  box-shadow: rgb(17, 17, 17) 0px 0px 0px 1px inset;
+}
