@@ -1,0 +1,20 @@
+.featureBar {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  padding: 6px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  z-index: 10;
+  flex-direction: column;
+  background: black;
+  color: white;
+}
+
+.hide {
+  opacity: 0;
+  display: none;
+}
