@@ -6,7 +6,7 @@ import Bag from '../../../icons/Bag.tsx';
 import { useUI } from '../../../ui/context';
 
 export default function LoginBar() {
-  const { openModal, setModalView } = useUI();
+  const { openModal, setModalView, openSidebar } = useUI();
 
   return (
     <div className={styles.LoginBar}>
@@ -25,7 +25,7 @@ export default function LoginBar() {
           }}>
           Create Account
         </button>
-        <button aria-label="Create Account">
+        <button aria-label="Create Account" onClick={openSidebar}>
           <Bag />
         </button>
       </div>

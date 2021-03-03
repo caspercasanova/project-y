@@ -28,9 +28,12 @@ export default function Sidebar({ children, open = false, onClose }) {
   return (
     <Portal>
       {open ? (
-        <div className={styles.background} ref={ref}>
-          <div className={styles.leftPane} onClick={onClose} />
-          <section className={styles.cartPane}>{children}</section>
+        <div ref={ref} className={styles.sideBar}>
+          <div className={styles.background} />
+          <div className={styles.paneContainer}>
+            <div className={styles.leftPane} onClick={onClose} />
+            <section className={styles.cartPane}>{children}</section>
+          </div>
         </div>
       ) : null}
     </Portal>

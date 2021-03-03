@@ -9,13 +9,14 @@ export function CommerceProvider({ children, config }) {
       'CommerceProvider requires a valid config object'
     );
   }
+  const providerRef = useRef(provider);
 
-  const fetcherRef = useRef(config.fetcher);
   // Because the config is an object, if the parent re-renders this provider
   // will re-render every consumer unless we memoize the config
   const cfg = useMemo(
     () => ({
-      fetcher: fetcherRef,
+      providerRef,
+
       // locale: config.locale,
       cartCookie: config.cartCookie,
     }),

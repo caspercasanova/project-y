@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 
 const initialState = {
-  // displaySidebar: false,
+  displaySidebar: false,
   // displayDropdown: false,
   displayModal: false,
   modalView: 'LOGIN_VIEW', // FILTERS_VIEW FORGOT_PASSWORD_VIEW CREATE_ACCOUNT
@@ -86,18 +86,18 @@ function uiReducer(state, action) {
 export const UIProvider = props => {
   const [state, dispatch] = React.useReducer(uiReducer, initialState);
 
-  // const openSidebar = () => dispatch({ type: 'OPEN_SIDEBAR' })
-  // const closeSidebar = () => dispatch({ type: 'CLOSE_SIDEBAR' })
-  // const toggleSidebar = () =>
-  //   state.displaySidebar
-  //     ? dispatch({ type: 'CLOSE_SIDEBAR' })
-  //     : dispatch({ type: 'OPEN_SIDEBAR' })
-  // const closeSidebarIfPresent = () =>
-  //   state.displaySidebar && dispatch({ type: 'CLOSE_SIDEBAR' })
-  // const openDropdown = () => dispatch({ type: 'OPEN_DROPDOWN' })
-  // const closeDropdown = () => dispatch({ type: 'CLOSE_DROPDOWN' })
+  const openSidebar = () => dispatch({ type: 'OPEN_SIDEBAR' });
+  const closeSidebar = () => dispatch({ type: 'CLOSE_SIDEBAR' });
+  const toggleSidebar = () =>
+    state.displaySidebar
+      ? dispatch({ type: 'CLOSE_SIDEBAR' })
+      : dispatch({ type: 'OPEN_SIDEBAR' });
+  const closeSidebarIfPresent = () =>
+    state.displaySidebar && dispatch({ type: 'CLOSE_SIDEBAR' });
   const openModal = () => dispatch({ type: 'OPEN_MODAL' });
   const closeModal = () => dispatch({ type: 'CLOSE_MODAL' });
+  // const openDropdown = () => dispatch({ type: 'OPEN_DROPDOWN' })
+  // const closeDropdown = () => dispatch({ type: 'CLOSE_DROPDOWN' })
   // const openToast = () => dispatch({ type: 'OPEN_TOAST' })
   // const closeToast = () => dispatch({ type: 'CLOSE_TOAST' })
   // const setUserAvatar = (value: string) => dispatch({ type: 'SET_USER_AVATAR', value })
@@ -109,10 +109,10 @@ export const UIProvider = props => {
   const value = useMemo(
     () => ({
       ...state,
-      // openSidebar,
-      // closeSidebar,
-      // toggleSidebar,
-      // closeSidebarIfPresent,
+      openSidebar,
+      closeSidebar,
+      toggleSidebar,
+      closeSidebarIfPresent,
       // openDropdown,
       // closeDropdown,
       // openToast,
