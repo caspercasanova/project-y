@@ -9,7 +9,9 @@ export default function SignInView() {
   const [currentPage, setCurrentPage] = useState('Sign In');
   return (
     <div className={styles.SignInView}>
-      <h2>Welcome To Project Y</h2>
+      <div className={styles.logoContainer}>
+        <img src="/images/Project_Y_logo.png" />
+      </div>
       <div className={styles.SignInContainer}>
         <div>
           <Button onClick={() => setCurrentPage('Sign In')}>

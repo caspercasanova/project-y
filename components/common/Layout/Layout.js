@@ -1,17 +1,17 @@
 import styles from './Layout.module.scss';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import SignInView from '../../SignInView/SignInView';
-import FiltersView from '../../ProductGrid/FiltersView/FiltersView';
+
+import { FeatureBar, Header, Footer } from '@components/common';
+import { SignInView } from '@components/auth';
+import { FiltersView } from '@components/product_grid';
 import { useAcceptCookies } from '../../../lib/hooks/useAcceptedCookies';
-import FeatureBar from '../FeatureBar/FeatureBar';
 import { useRouter } from 'next/router';
-import { useUI } from '../../ui/context';
+import { useUI } from '@components/ui/context';
+import { CartView } from '@components/cart';
+
 import Modal from '../../ui/Modal/Modal';
 import Main from '../../ui/Main/Main';
 import Button from '../../ui/Button/Button';
 import Sidebar from '../../ui/Sidebar/Sidebar';
-import CartView from '../../Cart/CartView/CartView';
 // TODO: ADD FEATURES AND COMMERCE PROVIDER AND POSSIBLY A NEW CONTAINER
 
 export default function Layout({ children }) {
